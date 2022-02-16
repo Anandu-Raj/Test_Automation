@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+   <parameter name="url" value="https://demo.guru99.com/V1/" />
+   <parameter name="user" value="mngr384011" />
+  <parameter name="password" value="EvusUna" />
+  <parameter name="acc" value="123456789" />
+    <classes>
+      <class name="customstatmnt.Testcustomised"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
