@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<parameter name="url" value="https://demo.guru99.com/V1/" />
+		<parameter name="LPTitle" value="GTPL Bank Home Page" />
+		<parameter name="uid" value="mngr382174" />
+		<parameter name="pword" value="gEvyrAb" />
+		<parameter name="HPTitle" value="GTPL Bank Manager HomePage" />
+		<parameter name="ECPTitle" value="Gtpl Bank Edit Customer Page" />
+		<classes>
+			<class name="test.TestGTPL" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
