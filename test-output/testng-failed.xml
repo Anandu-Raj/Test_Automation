@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="pEmeryt"/>
+    <parameter name="ID" value="mngr384303"/>
+    <parameter name="url" value="http://demo.guru99.com/V1//"/>
+    <classes>
+      <class name="Test_Scenario.GTPL_Test">
+        <methods>
+          <include name="start"/>
+          <include name="editPageDetails"/>
+          <include name="clickEditCustomer"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- Test_Scenario.GTPL_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
