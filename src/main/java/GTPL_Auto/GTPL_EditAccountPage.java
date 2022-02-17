@@ -1,5 +1,6 @@
 package GTPL_Auto;
 
+import java.util.Scanner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,44 +24,74 @@ public class GTPL_EditAccountPage {
 	By ResetButton = By.xpath("//*[@name='res']");
 	By HomeLink = By.xpath("//*[text()='Home']");
 
+	By accountNo = By.xpath("//*[@name='accountno']");
+	By alert = By.xpath("//*[@id='message2']");
+
 	public void display() {
 		// TODO Auto-generated method stub
 		wait = new WebDriverWait(driver, 20);
 
 		WebElement heading = wait.until(ExpectedConditions.visibilityOfElementLocated(Heading));
-		String expectedHeading = "Edit Account Form";
-		String actualHeading = heading.getText();
-		Assert.assertEquals(expectedHeading, actualHeading);
+		Assert.assertEquals(true, heading.isDisplayed());
 		System.out.println("------------------------------------------------");
-		System.out.println("Heading Matched " + heading.getText());
+		System.out.println(" > Heading is displayed" + heading.getText());
 
 		WebElement accountNo = wait.until(ExpectedConditions.visibilityOfElementLocated(AccountNo));
-		String expectedAccountNo = "Edit Account Form";
-		String actualAccountNo = accountNo.getText();
-		Assert.assertEquals(expectedAccountNo, actualAccountNo);
+		Assert.assertEquals(true, accountNo.isDisplayed());
 		System.out.println("------------------------------------------------");
-		System.out.println("Account No found " + accountNo.getText());
+		System.out.println(" > Account No is displayed");
 
 		WebElement submitButton = wait.until(ExpectedConditions.visibilityOfElementLocated(SubmitButton));
-		String expectedSubmitButton = "Edit Account Form";
-		String actualSubmitButton = submitButton.getText();
-		Assert.assertEquals(expectedSubmitButton, actualSubmitButton);
+		Assert.assertEquals(true, submitButton.isDisplayed());
 		System.out.println("------------------------------------------------");
-		System.out.println("Button Found " + submitButton.getText());
+		System.out.println(" > Submit Button is displayed");
 
 		WebElement resetButton = wait.until(ExpectedConditions.visibilityOfElementLocated(ResetButton));
-		String expectedResetButton = "Edit Account Form";
-		String actualResetButton = resetButton.getText();
-		Assert.assertEquals(expectedResetButton, actualResetButton);
+		Assert.assertEquals(true, resetButton.isDisplayed());
 		System.out.println("------------------------------------------------");
-		System.out.println("Rest Found " + resetButton.getText());
+		System.out.println(" > Reset Button is displayed");
 
 		WebElement homeLink = wait.until(ExpectedConditions.visibilityOfElementLocated(HomeLink));
-		String expectedHomeLink = "Edit Account Form";
-		String actualHomeLink = homeLink.getText();
-		Assert.assertEquals(expectedHomeLink, actualHomeLink);
+		Assert.assertEquals(true, homeLink.isDisplayed());
 		System.out.println("------------------------------------------------");
-		System.out.println("Rest Found " + homeLink.getText());
+		System.out.println(" > Home Link is displayed");
 	}
 
+	public void editAccount() {
+		@SuppressWarnings("resource")
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Enter Account No > ");
+
+		String accno = reader.next();
+		String regex = "[0-9]+";
+
+		if (accno.matches(regex)) {
+			WebElement AccountNo = wait.until(ExpectedConditions.visibilityOfElementLocated(accountNo));
+			AccountNo.sendKeys(accno);
+			WebElement submitButton = wait.until(ExpectedConditions.visibilityOfElementLocated(SubmitButton));
+			submitButton.click();
+		} else {
+			WebElement AccountNo = wait.until(ExpectedConditions.visibilityOfElementLocated(accountNo));
+			AccountNo.sendKeys(accno);
+			WebElement Alert = wait.until(ExpectedConditions.visibilityOfElementLocated(alert));
+			System.out.println("------------------------------------------------");
+			System.out.println(" >" + Alert.getText());
+		}
+	}
+
+	public void resetButton(String accNo) {
+		WebElement AccountNo = wait.until(ExpectedConditions.visibilityOfElementLocated(accountNo));
+		AccountNo.sendKeys(accNo);
+		WebElement resetButton = wait.until(ExpectedConditions.visibilityOfElementLocated(ResetButton));
+		resetButton.click();
+		System.out.println("------------------------------------------------");
+		System.out.println(" > Fields cleared");
+	}
+
+	public void homeLink() {
+		WebElement homeLink = wait.until(ExpectedConditions.visibilityOfElementLocated(HomeLink));
+		homeLink.click();
+		System.out.println("------------------------------------------------");
+		System.out.println(" > " + driver.getTitle());
+	}
 }

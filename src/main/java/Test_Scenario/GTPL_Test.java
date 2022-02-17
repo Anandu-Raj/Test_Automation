@@ -1,5 +1,6 @@
 package Test_Scenario;
 
+import java.io.File;
 import java.util.Scanner;
 
 import org.openqa.selenium.WebDriver;
@@ -7,10 +8,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import GTPL_Auto.GTPL_EditAccountPage;
 import GTPL_Auto.GTPL_HomePage;
 import GTPL_Auto.GTPL_LoginPage;
@@ -24,6 +27,10 @@ public class GTPL_Test {
 	public void start(String url) {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized");
+//		options.addExtensions(new File("C:\\Users\\91735\\eclipse-workspace\\GTPL_Auto\\blocker")); 
+//		DesiredCapabilities capabilities = new DesiredCapabilities();
+//		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+//		options.merge(capabilities);
 		Scanner sc = new Scanner(System.in);
 		System.out.println("-----------------------------------");
 		System.out.println("Select a browser");
@@ -76,7 +83,7 @@ public class GTPL_Test {
 	}
 
 	@Test(priority = 3)
-	public void clickEditCustomer() {
+	public void clickEditAccount() {
 		GTPL_HomePage obj = new GTPL_HomePage(driver);
 		obj.checkModule();
 	}
@@ -85,6 +92,11 @@ public class GTPL_Test {
 	public void editPageDetails() {
 		GTPL_EditAccountPage obj = new GTPL_EditAccountPage(driver);
 		obj.display();
+	}
+	@Test(priority = 5)
+	public void editAccountPage() {
+		GTPL_EditAccountPage obj = new GTPL_EditAccountPage(driver);
+		obj.editAccount();
 	}
 
 	@AfterClass
