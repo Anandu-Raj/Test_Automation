@@ -19,25 +19,14 @@ public class Home {
 	By newcustomer = By.xpath("//*[text()='New Account']");
 
 	public void newcusdisplay() {
-		
+
 		wait = new WebDriverWait(driver, 20);
 		WebElement newcustomermenu = wait.until(ExpectedConditions.visibilityOfElementLocated(newcustomer));
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click()",  newcustomermenu);
+		Assert.assertEquals(true, newcustomermenu.isDisplayed());
+		System.out.println("NewAccount menu tittle verification passed");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click()", newcustomermenu);
 		
-		String text =  newcustomermenu.getText();
-		System.out.println("Tittle=" + text);
-		String acltitle = "New Account";
-		System.out.println(acltitle);
-		Assert.assertEquals(text, acltitle);
-		System.out.println("New Account menu icon verification passed");
-		if ( newcustomermenu.isDisplayed()) {
-			System.out.println("New customer icon displayed");
-		} else {
-			System.out.println("New customer icon not displayed");
-		}
-
-
 
 	}
 

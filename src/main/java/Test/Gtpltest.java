@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import Page.Addaccount;
 import Page.Home;
 import Page.Login;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -23,25 +24,36 @@ public class Gtpltest {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.navigate().to(url);
+			
 			String title=driver.getTitle();
 			 System.out.println(title);
 			String acltitle="GTPL Bank Home Page";
 			 System.out.println(acltitle);
 			Assert.assertEquals(title, acltitle);
-	        System.out.println("Tittle verification passed");
+	        System.out.println("GTPL Bank Tittle verification passed");
 		}
 		@Test(priority = 1 )
 		 @Parameters({"email","password"})
 		public void emailtest(String email,String password)
 		{
 			Login ob=new Login(driver);
-			ob.logingtpl(email, password);
+			ob.login(email, password);
 		}
-		@Test(priority = 4 )
-		public void searchest() throws InterruptedException
+		@Test(priority = 2 )
+		public void searchtest() 
 		{
 			Home ob=new Home(driver);
 			ob.newcusdisplay();
+			
+		}
+		@Test(priority = 3 )
+		public void Newaccounttest()
+		{
+			Addaccount ob=new Addaccount(driver);
+			ob.Customerid_display();
+			ob.Accounttype_display();
+			ob.Initialdeposit_display();
+			//ob.Reset_display();
 			
 		}
 		

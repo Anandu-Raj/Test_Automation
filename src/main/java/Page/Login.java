@@ -14,27 +14,22 @@ public class Login {
 		this.driver = driver;
 	}
 
-	By uid = By.xpath("//*[@name=\"uid\"]");
+	By username = By.xpath("//*[@name=\"uid\"]");
 	By pass = By.xpath("//*[@name=\"password\"]");
-	By sub = By.xpath("//*[@name=\"btnLogin\"]");
+	By submit = By.xpath("//*[@name=\"btnLogin\"]");
 	
 
-	public void logingtpl(String email, String password) {
+	public void login(String email, String password) {
 		wait = new WebDriverWait(driver, 20);
 
-		WebElement we1 = wait.until(ExpectedConditions.visibilityOfElementLocated(uid));
-		we1.click();
-		we1.sendKeys(email);
+		WebElement userid = wait.until(ExpectedConditions.visibilityOfElementLocated(username));
+		userid.click();
+		userid.sendKeys(email);
 		WebElement we2 = wait.until(ExpectedConditions.visibilityOfElementLocated(pass));
 		we2.click();
 		we2.sendKeys(password);
-		WebElement we3 = wait.until(ExpectedConditions.visibilityOfElementLocated(sub));
+		WebElement we3 = wait.until(ExpectedConditions.visibilityOfElementLocated(submit));
 		we3.click();
 }
-//	public void tittleverify()
-//	{
-//		String title=driver.getTitle();
-//		String acltitle="GTPL Bank Home Page";
-//		Assert.assertEquals(title, acltitle);
-//	}
+
 }
