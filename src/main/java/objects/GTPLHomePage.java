@@ -21,16 +21,14 @@ public class GTPLHomePage {
 		String actualUrl = "https://demo.guru99.com/V1/html/Managerhomepage.php";
 		String expectedUrl = driver.getCurrentUrl();
 		Assert.assertEquals(expectedUrl, actualUrl);
-		System.out.println("Actual URL = Expected URL");
+		System.out.println("Correct URL");
 	}
 
 	public void menuDisplay() {
 		wait = new WebDriverWait(driver, 20);
 		WebElement Newcustomer = wait.until(ExpectedConditions.visibilityOfElementLocated(NewCustomer));
-		String actualText = "New Customer";
-		String expectedText = Newcustomer.getText();
-		Assert.assertEquals(expectedText, actualText);
-		System.out.println("Name of the menu is New Customer");
+		Assert.assertEquals(true, Newcustomer.isDisplayed());
+		System.out.println("New Customer menu is displayed");
 		WebElement NewcustomerClick = wait.until(ExpectedConditions.visibilityOfElementLocated(NewCustomer));
 		NewcustomerClick.click();
 	}

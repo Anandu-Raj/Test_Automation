@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-16T17:00:30 IST" name="Suite" finished-at="2022-02-16T17:00:40 IST" duration-ms="9598">
+  <suite started-at="2022-02-17T17:04:13 IST" name="Suite" finished-at="2022-02-17T17:04:50 IST" duration-ms="37396">
     <groups>
     </groups>
-    <test started-at="2022-02-16T17:00:30 IST" name="Test" finished-at="2022-02-16T17:00:40 IST" duration-ms="9598">
+    <test started-at="2022-02-17T17:04:13 IST" name="Test" finished-at="2022-02-17T17:04:50 IST" duration-ms="37396">
       <class name="test.GTPLTest">
-        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:test.GTPLTest@76c3e77a]" started-at="2022-02-16T17:00:30 IST" name="start" finished-at="2022-02-16T17:00:37 IST" duration-ms="6675" status="PASS">
+        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:13 IST" name="start" finished-at="2022-02-17T17:04:17 IST" duration-ms="4618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="user(java.lang.String)[pri:0, instance:test.GTPLTest@76c3e77a]" started-at="2022-02-16T17:00:37 IST" name="user" finished-at="2022-02-16T17:00:37 IST" duration-ms="376" status="PASS">
+        <test-method signature="user(java.lang.String)[pri:0, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:17 IST" name="user" finished-at="2022-02-17T17:04:18 IST" duration-ms="370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user -->
-        <test-method signature="passWord(java.lang.String)[pri:1, instance:test.GTPLTest@76c3e77a]" started-at="2022-02-16T17:00:37 IST" name="passWord" finished-at="2022-02-16T17:00:38 IST" duration-ms="1171" status="PASS">
+        <test-method signature="passWord(java.lang.String)[pri:1, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:18 IST" name="passWord" finished-at="2022-02-17T17:04:19 IST" duration-ms="1182" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,33 +40,53 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passWord -->
-        <test-method signature="checkTheUrl()[pri:2, instance:test.GTPLTest@76c3e77a]" started-at="2022-02-16T17:00:38 IST" name="checkTheUrl" finished-at="2022-02-16T17:00:38 IST" duration-ms="14" status="PASS">
+        <test-method signature="functionalityNewCustomer()[pri:2, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:19 IST" name="functionalityNewCustomer" finished-at="2022-02-17T17:04:20 IST" duration-ms="816" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTheUrl -->
-        <test-method signature="clickNewCustomer()[pri:3, instance:test.GTPLTest@76c3e77a]" started-at="2022-02-16T17:00:38 IST" name="clickNewCustomer" finished-at="2022-02-16T17:00:39 IST" duration-ms="650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickNewCustomer -->
-        <test-method signature="titleNewCustomerEntryPage()[pri:4, instance:test.GTPLTest@76c3e77a]" started-at="2022-02-16T17:00:39 IST" name="titleNewCustomerEntryPage" finished-at="2022-02-16T17:00:39 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- functionalityNewCustomer -->
+        <test-method signature="titleNewCustomerEntryPage()[pri:3, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:20 IST" name="titleNewCustomerEntryPage" finished-at="2022-02-17T17:04:20 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleNewCustomerEntryPage -->
-        <test-method signature="displayNewCustomerEntryPage()[pri:5, instance:test.GTPLTest@76c3e77a]" started-at="2022-02-16T17:00:39 IST" name="displayNewCustomerEntryPage" finished-at="2022-02-16T17:00:40 IST" duration-ms="656" status="FAIL">
+        <test-method signature="displayNewCustomerEntryPage()[pri:4, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:20 IST" name="displayNewCustomerEntryPage" finished-at="2022-02-17T17:04:20 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayNewCustomerEntryPage -->
+        <test-method signature="CustomerNameFormat()[pri:5, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:20 IST" name="CustomerNameFormat" finished-at="2022-02-17T17:04:31 IST" duration-ms="11207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerNameFormat -->
+        <test-method signature="AddressFormat()[pri:6, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:31 IST" name="AddressFormat" finished-at="2022-02-17T17:04:35 IST" duration-ms="3123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddressFormat -->
+        <test-method signature="CityFormat()[pri:7, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:35 IST" name="CityFormat" finished-at="2022-02-17T17:04:38 IST" duration-ms="3007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CityFormat -->
+        <test-method signature="StateFormat()[pri:8, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:38 IST" name="StateFormat" finished-at="2022-02-17T17:04:43 IST" duration-ms="5752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StateFormat -->
+        <test-method signature="TelephoneNumberFormat()[pri:9, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:43 IST" name="TelephoneNumberFormat" finished-at="2022-02-17T17:04:50 IST" duration-ms="6269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TelephoneNumberFormat -->
+        <test-method signature="HomeLinkFunctionality()[pri:10, instance:test.GTPLTest@3d6f0054]" started-at="2022-02-17T17:04:50 IST" name="HomeLinkFunctionality" finished-at="2022-02-17T17:04:50 IST" duration-ms="529" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Reset] but found []]]>
+              <![CDATA[expected [https://demo.guru99.com/V1/html/Managerhomepage.php] but found [https://demo.guru99.com/V1/html/homepage.html]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Reset] but found []
+              <![CDATA[java.lang.AssertionError: expected [https://demo.guru99.com/V1/html/Managerhomepage.php] but found [https://demo.guru99.com/V1/html/homepage.html]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at objects.GTPLNewCustomerEntryPage.NewCustomerEntryPageDisplay(GTPLNewCustomerEntryPage.java:102)
-at test.GTPLTest.displayNewCustomerEntryPage(GTPLTest.java:64)
+at objects.GTPLNewCustomerEntryPage.functionalityHomeLink(GTPLNewCustomerEntryPage.java:208)
+at test.GTPLTest.HomeLinkFunctionality(GTPLTest.java:95)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,7 +120,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- displayNewCustomerEntryPage -->
+        </test-method> <!-- HomeLinkFunctionality -->
       </class> <!-- test.GTPLTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

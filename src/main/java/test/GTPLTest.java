@@ -41,27 +41,58 @@ public class GTPLTest {
 	}
 
 	@Test(priority = 2)
-	public void checkTheUrl() {
+	public void functionalityNewCustomer() {
 		GTPLHomePage obj = new GTPLHomePage(driver);
 		obj.checkURL();
+		obj.menuDisplay();
 	}
 
 	@Test(priority = 3)
-	public void clickNewCustomer() {
-		GTPLHomePage obj = new GTPLHomePage(driver);
-		obj.menuDisplay();
-	}
-	
-	@Test(priority = 4)
 	public void titleNewCustomerEntryPage() {
 		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
 		obj.NewCustomerEntryPageTitle();
 	}
-	
-	@Test(priority = 5)
+
+	@Test(priority = 4)
 	public void displayNewCustomerEntryPage() {
 		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
 		obj.NewCustomerEntryPageDisplay();
+	}
+
+	@Test(priority = 5)
+	public void CustomerNameFormat() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.formatCustomerName();
+	}
+
+	@Test(priority = 6)
+	public void AddressFormat() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.formatAddress();
+	}
+
+	@Test(priority = 7)
+	public void CityFormat() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.formatCity();
+	}
+
+	@Test(priority = 8)
+	public void StateFormat() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.formatState();
+	}
+
+	@Test(priority = 9)
+	public void TelephoneNumberFormat() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.formatTelephoneNumber();
+	}
+
+	@Test(priority = 10)
+	public void HomeLinkFunctionality() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.functionalityHomeLink();
 	}
 
 //	@AfterClass

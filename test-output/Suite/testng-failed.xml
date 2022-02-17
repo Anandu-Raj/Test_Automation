@@ -9,7 +9,7 @@
       <class name="test.GTPLTest">
         <methods>
           <include name="start"/>
-          <include name="displayNewCustomerEntryPage"/>
+          <include name="HomeLinkFunctionality"/>
         </methods>
       </class> <!-- test.GTPLTest -->
     </classes>
