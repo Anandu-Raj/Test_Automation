@@ -48,6 +48,44 @@ public class Gtpltest {
 		obj.TitlePage();
 	}
 
+	@Test(priority = 0)
+	public void DispalyLoginButton() {
+		loadurl obj = new loadurl(driver);
+		obj.DispalyLoginButton();
+	}
+	
+	@Test(priority = 0)
+	public void DispalyUserid() {
+		loadurl obj = new loadurl(driver);
+		obj.DispalyUserid();
+	}
+	@Test(priority = 0)
+	public void Displaypassword() {
+		loadurl obj = new loadurl(driver);
+		obj.Displaypassword();
+	}
+	
+	@Test(priority = 0)
+	public void  DisplayReset() {
+		loadurl obj = new loadurl(driver);
+		obj. DisplayReset();
+	}
+	 
+	
+	@Test(priority = 0)
+	public void  Mandatoryfield() {
+		loadurl obj = new loadurl(driver);
+		obj.Mandatoryfield1();
+	}
+	 
+
+
+	@Test(priority = 2) 
+	public void DisplayMangerpage() {
+		Mangerpage obj = new Mangerpage(driver);
+		obj.DisplayMangerpage();
+	}
+	
 	@AfterClass
 	public void stop() {
 		driver.quit();

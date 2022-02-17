@@ -8,8 +8,8 @@
     <classes>
       <class name="login.Gtpltest">
         <methods>
+          <include name="DisplayMangerpage"/>
           <include name="start"/>
-          <include name="TittlePage"/>
           <include name="stop"/>
         </methods>
       </class> <!-- login.Gtpltest -->
