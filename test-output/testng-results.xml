@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-16T17:34:04 IST" name="Suite" finished-at="2022-02-16T17:34:15 IST" duration-ms="11367">
+  <suite started-at="2022-02-17T18:19:50 IST" name="Suite" finished-at="2022-02-17T18:20:30 IST" duration-ms="39820">
     <groups>
     </groups>
-    <test started-at="2022-02-16T17:34:04 IST" name="Test" finished-at="2022-02-16T17:34:15 IST" duration-ms="11367">
+    <test started-at="2022-02-17T18:19:50 IST" name="Test" finished-at="2022-02-17T18:20:30 IST" duration-ms="39820">
       <class name="test.TestGTPL">
-        <test-method is-config="true" signature="driverInstance1(java.lang.String)[pri:0, instance:test.TestGTPL@76c3e77a]" started-at="2022-02-16T17:34:04 IST" name="driverInstance1" finished-at="2022-02-16T17:34:12 IST" duration-ms="7876" status="PASS">
+        <test-method is-config="true" signature="driverInstance1(java.lang.String)[pri:0, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:19:50 IST" name="driverInstance1" finished-at="2022-02-17T18:19:58 IST" duration-ms="7954" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInstance1 -->
-        <test-method signature="loginPageTitleTest(java.lang.String)[pri:0, instance:test.TestGTPL@76c3e77a]" started-at="2022-02-16T17:34:12 IST" name="loginPageTitleTest" finished-at="2022-02-16T17:34:12 IST" duration-ms="26" status="PASS">
+        <test-method signature="loginPageTitleTest(java.lang.String)[pri:0, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:19:58 IST" name="loginPageTitleTest" finished-at="2022-02-17T18:19:58 IST" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="EnterCredentialsTest(java.lang.String,java.lang.String)[pri:1, instance:test.TestGTPL@76c3e77a]" started-at="2022-02-16T17:34:12 IST" name="EnterCredentialsTest" finished-at="2022-02-16T17:34:13 IST" duration-ms="784" status="PASS">
+        <test-method signature="EnterCredentialsTest(java.lang.String,java.lang.String)[pri:1, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:19:58 IST" name="EnterCredentialsTest" finished-at="2022-02-17T18:19:59 IST" duration-ms="507" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterCredentialsTest -->
-        <test-method signature="submitCredentialsTest()[pri:2, instance:test.TestGTPL@76c3e77a]" started-at="2022-02-16T17:34:13 IST" name="submitCredentialsTest" finished-at="2022-02-16T17:34:15 IST" duration-ms="1905" status="PASS">
+        <test-method signature="submitCredentialsTest()[pri:2, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:19:59 IST" name="submitCredentialsTest" finished-at="2022-02-17T18:20:00 IST" duration-ms="1506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitCredentialsTest -->
-        <test-method signature="homePageTitleTest(java.lang.String)[pri:3, instance:test.TestGTPL@76c3e77a]" started-at="2022-02-16T17:34:15 IST" name="homePageTitleTest" finished-at="2022-02-16T17:34:15 IST" duration-ms="15" status="PASS">
+        <test-method signature="homePageTitleTest(java.lang.String)[pri:3, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:00 IST" name="homePageTitleTest" finished-at="2022-02-17T18:20:00 IST" duration-ms="11" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method signature="editCustomerPageTest()[pri:4, instance:test.TestGTPL@76c3e77a]" started-at="2022-02-16T17:34:15 IST" name="editCustomerPageTest" finished-at="2022-02-16T17:34:15 IST" duration-ms="648" status="PASS">
+        <test-method signature="editCustomerMenuTest()[pri:4, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:00 IST" name="editCustomerMenuTest" finished-at="2022-02-17T18:20:01 IST" duration-ms="1086" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editCustomerPageTest -->
-        <test-method signature="editCustomerPageTitleTest(java.lang.String)[pri:5, instance:test.TestGTPL@76c3e77a]" started-at="2022-02-16T17:34:15 IST" name="editCustomerPageTitleTest" finished-at="2022-02-16T17:34:15 IST" duration-ms="22" status="FAIL">
+        </test-method> <!-- editCustomerMenuTest -->
+        <test-method signature="editCustomerPageTitleTest(java.lang.String)[pri:5, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:01 IST" name="editCustomerPageTitleTest" finished-at="2022-02-17T18:20:01 IST" duration-ms="22" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,20 +72,46 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCustomerPageTitleTest -->
+        <test-method signature="editCustomerFormTitleTest()[pri:6, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:01 IST" name="editCustomerFormTitleTest" finished-at="2022-02-17T18:20:01 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCustomerFormTitleTest -->
+        <test-method signature="customerIDTitleAndInputTest()[pri:7, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:01 IST" name="customerIDTitleAndInputTest" finished-at="2022-02-17T18:20:02 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerIDTitleAndInputTest -->
+        <test-method signature="SubmitButtonTest()[pri:8, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:02 IST" name="SubmitButtonTest" finished-at="2022-02-17T18:20:03 IST" duration-ms="916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitButtonTest -->
+        <test-method signature="ResetButton()[pri:9, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:03 IST" name="ResetButton" finished-at="2022-02-17T18:20:03 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResetButton -->
+        <test-method signature="inputFormatTest()[pri:10, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:03 IST" name="inputFormatTest" finished-at="2022-02-17T18:20:30 IST" duration-ms="26867" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [Gtpl Bank Edit Customer Page] but found [GTPL Bank Manager HomePage]]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='message14'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GAHM23E', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\THIS_L~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c8f9cc9ab406f99b0cfce8b36101e3df]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Gtpl Bank Edit Customer Page] but found [GTPL Bank Manager HomePage]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at pages.GTPLEditCustomerPage.editCustomerPageTitle(GTPLEditCustomerPage.java:18)
-at test.TestGTPL.editCustomerPageTitleTest(TestGTPL.java:64)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='message14'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GAHM23E', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\THIS_L~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c8f9cc9ab406f99b0cfce8b36101e3df
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at pages.GTPLEditCustomerPage.inputFormat(GTPLEditCustomerPage.java:89)
+at test.TestGTPL.inputFormatTest(TestGTPL.java:95)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,10 +142,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editCustomerPageTitleTest -->
+        </test-method> <!-- inputFormatTest -->
+        <test-method is-config="true" signature="driverInstance2()[pri:0, instance:test.TestGTPL@5fbdfdcf]" started-at="2022-02-17T18:20:30 IST" name="driverInstance2" finished-at="2022-02-17T18:20:30 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInstance2 -->
       </class> <!-- test.TestGTPL -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

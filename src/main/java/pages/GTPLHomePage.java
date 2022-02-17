@@ -17,6 +17,7 @@ public class GTPLHomePage {
 	}
 	
 	By edCustomer = By.xpath("//*[text()='Edit Customer']");
+	By ad = By.xpath("//*[text()='Close']");
 	
 	public void homePageTitle(String HPtitle) {
 		String actualtitle = HPtitle; 
@@ -25,9 +26,14 @@ public class GTPLHomePage {
 		System.out.println("You entered GTPL Bank Manager HomePage");
 	}
 	
-	public void editCustomerPage() {
+	public void editCustomerMenu() {
 		wait = new WebDriverWait(driver, 20);
-		WebElement editCustomerMenu=wait.until(ExpectedConditions.visibilityOfElementLocated(edCustomer));
+		WebElement editCustomerMenu = wait.until(ExpectedConditions.visibilityOfElementLocated(edCustomer));
+		Assert.assertEquals(true, editCustomerMenu.isDisplayed());
+		System.out.println("Edit Customer Menu is displayed. Click on it. (TC_EC_001)");
 		editCustomerMenu.click();
+		System.out.println("Edit Customer Menu clicked. (TC_EC_002)");
 	}
+	
+	
 }

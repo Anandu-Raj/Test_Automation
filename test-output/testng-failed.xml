@@ -11,7 +11,8 @@
     <classes>
       <class name="test.TestGTPL">
         <methods>
-          <include name="editCustomerPageTitleTest" invocation-numbers="0"/>
+          <include name="inputFormatTest"/>
+          <include name="driverInstance2"/>
           <include name="driverInstance1"/>
         </methods>
       </class> <!-- test.TestGTPL -->

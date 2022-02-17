@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 16 17:34:04 IST 2022</td>
+<td>Started on:</td><td>Thu Feb 17 18:19:50 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11367 ms)</td>
+<tr><td>Total time:</td><td>39 seconds (39820 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,21 +75,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestGTPL.editCustomerPageTitleTest()'><b>editCustomerPageTitleTest</b><br>Test class: test.TestGTPL<br>Parameters: Gtpl Bank Edit Customer Page</td>
-<td><div><pre>java.lang.AssertionError: expected [Gtpl Bank Edit Customer Page] but found [GTPL Bank Manager HomePage]
-	at pages.GTPLEditCustomerPage.editCustomerPageTitle(GTPLEditCustomerPage.java:18)
-	at test.TestGTPL.editCustomerPageTitleTest(TestGTPL.java:64)
+<td title='test.TestGTPL.inputFormatTest()'><b>inputFormatTest</b><br>Test class: test.TestGTPL</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;message14&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-GAHM23E&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\THIS_L~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c8f9cc9ab406f99b0cfce8b36101e3df
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.GTPLEditCustomerPage.inputFormat(GTPLEditCustomerPage.java:89)
+	at test.TestGTPL.inputFormatTest(TestGTPL.java:95)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1449987177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1449987177'><pre>java.lang.AssertionError: expected [Gtpl Bank Edit Customer Page] but found [GTPL Bank Manager HomePage]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at pages.GTPLEditCustomerPage.editCustomerPageTitle(GTPLEditCustomerPage.java:18)
-	at test.TestGTPL.editCustomerPageTitleTest(TestGTPL.java:64)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace396821493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace396821493'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;message14&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-GAHM23E&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\THIS_L~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c8f9cc9ab406f99b0cfce8b36101e3df
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.GTPLEditCustomerPage.inputFormat(GTPLEditCustomerPage.java:89)
+	at test.TestGTPL.inputFormatTest(TestGTPL.java:95)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,8 +127,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>test.TestGTPL@76c3e77a</td></tr>
+<td>26</td>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -130,30 +138,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestGTPL.editCustomerPageTest()'><b>editCustomerPageTest</b><br>Test class: test.TestGTPL</td>
-<td></td>
-<td>0</td>
-<td>test.TestGTPL@76c3e77a</td></tr>
-<tr>
 <td title='test.TestGTPL.EnterCredentialsTest()'><b>EnterCredentialsTest</b><br>Test class: test.TestGTPL<br>Parameters: mngr382174, gEvyrAb</td>
 <td></td>
 <td>0</td>
-<td>test.TestGTPL@76c3e77a</td></tr>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
+<tr>
+<td title='test.TestGTPL.editCustomerFormTitleTest()'><b>editCustomerFormTitleTest</b><br>Test class: test.TestGTPL</td>
+<td></td>
+<td>0</td>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
+<tr>
+<td title='test.TestGTPL.editCustomerMenuTest()'><b>editCustomerMenuTest</b><br>Test class: test.TestGTPL</td>
+<td></td>
+<td>1</td>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
+<tr>
+<td title='test.TestGTPL.editCustomerPageTitleTest()'><b>editCustomerPageTitleTest</b><br>Test class: test.TestGTPL<br>Parameters: Gtpl Bank Edit Customer Page</td>
+<td></td>
+<td>0</td>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
+<tr>
+<td title='test.TestGTPL.customerIDTitleAndInputTest()'><b>customerIDTitleAndInputTest</b><br>Test class: test.TestGTPL</td>
+<td></td>
+<td>0</td>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
 <tr>
 <td title='test.TestGTPL.submitCredentialsTest()'><b>submitCredentialsTest</b><br>Test class: test.TestGTPL</td>
 <td></td>
 <td>1</td>
-<td>test.TestGTPL@76c3e77a</td></tr>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
 <tr>
 <td title='test.TestGTPL.homePageTitleTest()'><b>homePageTitleTest</b><br>Test class: test.TestGTPL<br>Parameters: GTPL Bank Manager HomePage</td>
 <td></td>
 <td>0</td>
-<td>test.TestGTPL@76c3e77a</td></tr>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
+<tr>
+<td title='test.TestGTPL.SubmitButtonTest()'><b>SubmitButtonTest</b><br>Test class: test.TestGTPL</td>
+<td></td>
+<td>0</td>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
+<tr>
+<td title='test.TestGTPL.ResetButton()'><b>ResetButton</b><br>Test class: test.TestGTPL</td>
+<td></td>
+<td>0</td>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
 <tr>
 <td title='test.TestGTPL.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: test.TestGTPL<br>Parameters: GTPL Bank Home Page</td>
 <td></td>
 <td>0</td>
-<td>test.TestGTPL@76c3e77a</td></tr>
+<td>test.TestGTPL@5fbdfdcf</td></tr>
 </table><p>
 </body>
 </html>

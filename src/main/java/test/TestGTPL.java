@@ -51,10 +51,11 @@ public class TestGTPL {
 		page4.homePageTitle(HPTitle);
 	}
 	
+
 	@Test(priority = 4)
-	public void editCustomerPageTest() {
+	public void editCustomerMenuTest() {
 		GTPLHomePage page5=new GTPLHomePage(driver);
-		page5.editCustomerPage();
+		page5.editCustomerMenu();
 	}
 	
 	@Test(priority = 5)
@@ -62,6 +63,36 @@ public class TestGTPL {
 	public void editCustomerPageTitleTest(String ECPTitle) {
 		GTPLEditCustomerPage page6=new GTPLEditCustomerPage(driver);
 		page6.editCustomerPageTitle(ECPTitle);
+	}
+	
+	@Test(priority = 6)
+	public void editCustomerFormTitleTest() {
+		GTPLEditCustomerPage page7=new GTPLEditCustomerPage(driver);
+		page7.editCustomerFormTitle();
+	}
+	
+	@Test(priority = 7)
+	public void customerIDTitleAndInputTest() {
+		GTPLEditCustomerPage page8=new GTPLEditCustomerPage(driver);
+		page8.customerIDTitleAndInput();
+	}
+	
+	@Test(priority = 8)
+	public void SubmitButtonTest() {
+		GTPLEditCustomerPage page9=new GTPLEditCustomerPage(driver);
+		page9.SubmitButton();
+	}
+	
+	@Test(priority = 9)
+	public void ResetButton() {
+		GTPLEditCustomerPage page10=new GTPLEditCustomerPage(driver);
+		page10.ResetButton();
+	}
+	
+	@Test(priority = 10)
+	public void inputFormatTest() {
+		GTPLEditCustomerPage page11=new GTPLEditCustomerPage(driver);
+		page11.inputFormat();
 	}
 	
 	@AfterClass
