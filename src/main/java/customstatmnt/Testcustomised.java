@@ -8,7 +8,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 
@@ -34,6 +33,7 @@ public class Testcustomised {
 		loginobj=new Login(driver);
 		mngrobj=new Mngr(driver);
 		statobj=new Statmnt(driver);
+		
 
 	}
 	@Parameters({ "user", "password" })
@@ -51,18 +51,18 @@ public class Testcustomised {
 		mngrobj.mngr();
 	}
 	
-	@Parameters("acc")
 	@Test(priority = 2)
-	public void statmnt(String accnt)
+	public void statmnt()
 	{
-		statobj.accnt(accnt);
+		statobj.title();
+		statobj.accnt();
 		
 	}
 	
 	@AfterClass
 	public void afterClass() 
 	{
-		//driver.quit();
+		//driver.close();
 
 	}
 

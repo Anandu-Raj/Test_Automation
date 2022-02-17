@@ -5,7 +5,6 @@
    <parameter name="url" value="https://demo.guru99.com/V1/" />
    <parameter name="user" value="mngr384011" />
   <parameter name="password" value="EvusUna" />
-  <parameter name="acc" value="123456789" />
     <classes>
       <class name="customstatmnt.Testcustomised"/>
     </classes>

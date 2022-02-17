@@ -2,7 +2,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="acc" value="123456789"/>
     <parameter name="password" value="EvusUna"/>
     <parameter name="user" value="mngr384011"/>
     <parameter name="url" value="https://demo.guru99.com/V1/"/>
@@ -10,7 +9,7 @@
       <class name="customstatmnt.Testcustomised">
         <methods>
           <include name="beforeClass"/>
-          <include name="statmnt" invocation-numbers="0"/>
+          <include name="statmnt"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- customstatmnt.Testcustomised -->
