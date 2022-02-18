@@ -3,15 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <parameter name="password" value="ryrUmYq"/>
-    <parameter name="url" value="https://demo.guru99.com/V4/"/>
+    <parameter name="url" value="https://demo.guru99.com/V1/"/>
     <parameter name="email" value="mngr384414"/>
     <classes>
       <class name="Test.Gtpltest">
         <methods>
           <include name="Newaccounttest"/>
           <include name="Load"/>
-          <include name="emailtest"/>
-          <include name="searchtest"/>
         </methods>
       </class> <!-- Test.Gtpltest -->
     </classes>

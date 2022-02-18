@@ -10,86 +10,94 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class Addaccount 
-{
+public class Addaccount {
 	WebDriver driver;
 	WebDriverWait wait;
 
-	public Addaccount(WebDriver driver)
-	{
+	public Addaccount(WebDriver driver) {
 		this.driver = driver;
 	}
+
 	By customerid = By.xpath("//*[@name=\"cusid\"]");
 	By accounttype = By.xpath("//*[@name=\"selaccount\"]");
 	By initialdeposit = By.xpath("//*[@name=\"inideposit\"]");
 	By submit = By.xpath("//*[@name=\"button2\"]");
 	By reset = By.xpath("//*[@name=\"reset\"]");
 	By homelink = By.xpath("//*[text()=\"home\"]");
-	public void Customerid_display()
-	{
+
+	public void Customerid_display() {
 		wait = new WebDriverWait(driver, 20);
-		//String regex = "^[A-Z+$]";
-        WebElement custid = wait.until(ExpectedConditions.visibilityOfElementLocated(customerid));
-        custid.sendKeys("87185");
-        String fieldText = custid.getAttribute("value");
-        System.out.println(fieldText);
-        Assert.assertEquals(true, custid.isDisplayed());
+		WebElement custid = wait.until(ExpectedConditions.visibilityOfElementLocated(customerid));
+		custid.sendKeys("87185");
+		Assert.assertEquals(true, custid.isDisplayed());
 		System.out.println("Customer ID field displayed");
-//        assertTrue(fieldText.matches("[a-zA-Z0-9]+")); 
-//        System.out.println("Invalid input in ID field");
-         if (fieldText.matches("[0-9]+"))
-        {
-            System.out.println("valid");
-        }
-        else
-        {
-        	 System.out.println("Invalid input in ID field ");
-        }
-        
+
+		String fieldText = custid.getAttribute("value");
+		System.out.println("Input=" + fieldText);
+
+
+		if (fieldText.matches("[0-9]+")) {
+			System.out.println("**********valid input in CustomerID field");
+		} else {
+			System.out.println("**********Invalid input in CustomerID field ");
+		}
+
 	}
-	
-	public void Accounttype_display()
-	{
+
+	public void Accounttype_display() {
 		wait = new WebDriverWait(driver, 20);
-        WebElement acctype = wait.until(ExpectedConditions.visibilityOfElementLocated(accounttype));
-		Select type =new Select(acctype);
+		WebElement acctype = wait.until(ExpectedConditions.visibilityOfElementLocated(accounttype));
+		Select type = new Select(acctype);
 		type.selectByVisibleText("current");
 		Assert.assertEquals(true, acctype.isDisplayed());
 		System.out.println("Account type field displayed");
 		boolean status = type.isMultiple();
-		
-		if(status){
+
+		if (status) {
 			System.out.println("Allows multiple selection");
 		} else {
 			System.out.println("*************Does not allow multiple selection");
 		}
 
 	}
-	public void Initialdeposit_display()
-	{
+
+	public void Initialdeposit_display() {
 		wait = new WebDriverWait(driver, 20);
-        WebElement inideposit = wait.until(ExpectedConditions.visibilityOfElementLocated(initialdeposit));
-        inideposit.sendKeys("500");
-        Assert.assertEquals(true, inideposit.isDisplayed());
+		WebElement inideposit = wait.until(ExpectedConditions.visibilityOfElementLocated(initialdeposit));
+		inideposit.sendKeys("50m0");
+		Assert.assertEquals(true, inideposit.isDisplayed());
 		System.out.println("Initial deposit field displayed");
 
-        
-    }
-	public void Submit_display()
-	{
+		String fieldText = inideposit.getAttribute("value");
+        System.out.println("Input=" + fieldText);
+		
+
+		int deposit = Integer.parseInt(fieldText);
+		if (deposit >= 500) {
+			System.out.println("**********valid initial deposit");
+		}
+
+		else {
+			System.out.println("**********Please enter grater than 500 rupees ");
+		}
+		
+
+	}
+
+	public void Submit_display() {
 		wait = new WebDriverWait(driver, 20);
-        WebElement submitbtn = wait.until(ExpectedConditions.visibilityOfElementLocated(submit));
-        submitbtn.click();
-        Assert.assertEquals(true, submitbtn.isDisplayed());
+		WebElement submitbtn = wait.until(ExpectedConditions.visibilityOfElementLocated(submit));
+		submitbtn.click();
+		Assert.assertEquals(true, submitbtn.isDisplayed());
 		System.out.println("Submitt button displayed");
-    }
-	public void Reset_display()
-	{
+	}
+
+	public void Reset_display() {
 		wait = new WebDriverWait(driver, 20);
-        WebElement clear = wait.until(ExpectedConditions.visibilityOfElementLocated(reset));
-        clear.click();
-        Assert.assertEquals(true, clear.isDisplayed());
+		WebElement clear = wait.until(ExpectedConditions.visibilityOfElementLocated(reset));
+		clear.click();
+		Assert.assertEquals(true, clear.isDisplayed());
 		System.out.println("Clear button displayed");
-    }
-	
+	}
+
 }

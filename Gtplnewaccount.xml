@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
    <parameter name="url" value="https://demo.guru99.com/V1/" />
+   
   <parameter name="email" value="mngr384414" />
 	<parameter name="password" value="ryrUmYq" />
 		<classes>

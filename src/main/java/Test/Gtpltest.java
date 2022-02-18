@@ -53,13 +53,10 @@ public class Gtpltest {
 			ob.Customerid_display();
 			ob.Accounttype_display();
 			ob.Initialdeposit_display();
+			ob.Submit_display();
 			//ob.Reset_display();
 			
 		}
 		
-//		@AfterClass
-//		public void quit()
-//		{
-//			driver.quit();
-//		}
+
 }
