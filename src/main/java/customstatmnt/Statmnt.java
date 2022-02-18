@@ -15,14 +15,17 @@ public class Statmnt
 	
 	public WebDriver driver;
 	public WebDriverWait wait;
+	Scanner sc = new Scanner(System.in);
 	By title=By.xpath("//*[text()='Customized Statement Form']");
 	By accnt = By.xpath("//*[@name='accountno']");
 	By alert1=By.xpath("//*[@id='message2']");
 	By alert2=By.xpath("//*[text()='Account Number must not be blank']");
 	By fromDate=By.xpath("//*[text()='From Date ']");
 	By fromDate1=By.xpath("//*[@name='fdate']");
-	
-	
+	By toDate=By.xpath("//*[text()='To Date ']");
+	By toDate1=By.xpath("//*[@name='tdate']");
+	By amountL=By.xpath("//*[text()='Amount Lower Limit']");
+	By amount1=By.xpath("//*[@name='loweramt']");
 	public Statmnt(WebDriver driver) 
 	{
 		this.driver=driver;
@@ -38,7 +41,7 @@ public class Statmnt
 		Assert.assertTrue(driver.findElement(accnt).isDisplayed());
 		System.out.println("Account Number field is displayed");
 		wait = new WebDriverWait(driver, 10); 
-	    Scanner sc = new Scanner(System.in);  //@SuppressWarnings("resource") 
+	    //Scanner sc = new Scanner(System.in);  //@SuppressWarnings("resource") 
 		System.out.println("Enter the Account Number : ");
 		String account = sc.nextLine();
 		String regex = "[0-9]{1,10}";    //^\\d{9,18}$,,,,//[0-9]+
@@ -70,11 +73,65 @@ public class Statmnt
 	{
 		Assert.assertTrue(driver.findElement(fromDate).isDisplayed());
 		System.out.println("From Date is displayed");
-//		wait = new WebDriverWait(driver, 10); 
-//	    Scanner sc = new Scanner(System.in);  //@SuppressWarnings("resource") 
-//		System.out.println("Enter the From Date: ");
-//		String fromD = sc.nextLine();
-//		String regex = "[0-9]{1,10}";
-//		
+		wait = new WebDriverWait(driver, 10); 
+	    //Scanner sc = new Scanner(System.in);  //@SuppressWarnings("resource") 
+		System.out.println("Enter the From Date: ");
+		String fromD = sc.nextLine();
+		String regex = "^(1[0-2]|0[1-9])/(3[01]"+"|[12][0-9]|0[1-9])/[0-9]{4}$";
+		if(fromD.matches(regex))
+		{
+			WebElement from= wait.until(ExpectedConditions.visibilityOfElementLocated(fromDate1)); 
+			from.sendKeys(fromD);
+		}
+		else
+		{
+			System.out.println("Date is not in format");
+		}
+	}
+	public void todate()
+	{
+		wait = new WebDriverWait(driver, 10); 
+		Assert.assertTrue(driver.findElement(toDate).isDisplayed());
+		System.out.println("To Date is displayed");
+		//Scanner sc = new Scanner(System.in);  //@SuppressWarnings("resource") 
+		System.out.println("Enter the To Date: ");
+		String toD = sc.nextLine();
+		String regex = "^(1[0-2]|0[1-9])/(3[01]"+"|[12][0-9]|0[1-9])/[0-9]{4}$";
+		if(toD.matches(regex))
+		{
+			WebElement to= wait.until(ExpectedConditions.visibilityOfElementLocated(toDate1)); 
+			to.sendKeys(toD);
+		}
+		else
+		{
+			System.out.println("Date is not in format");
+		}
+	}
+	public void amount()
+	{
+		wait = new WebDriverWait(driver, 10); 
+		Assert.assertTrue(driver.findElement(amountL).isDisplayed());
+		System.out.println("Amount Lower Limit is displayed");
+		System.out.println("Enter the lower limit : ");
+		String lower= sc.nextLine();
+		String regex="[0-9]+";
+		if(lower.matches(regex))
+		{
+			WebElement lower1= wait.until(ExpectedConditions.visibilityOfElementLocated(amount1)); 
+			lower1.sendKeys(lower);
+		}
+		else if (lower.isBlank())
+		{
+			WebElement lower1= wait.until(ExpectedConditions.visibilityOfElementLocated(amount1)); 
+			lower1.sendKeys(lower);
+			System.out.println("Amount Lower Limit must not be blank");
+		}
+		else if (!lower.matches(regex))
+		{
+			WebElement lower1= wait.until(ExpectedConditions.visibilityOfElementLocated(amount1)); 
+         	lower1.sendKeys(lower);
+			System.out.println("Special Characters and Characters are not allowed");
+		}
+		
 	}
 	}

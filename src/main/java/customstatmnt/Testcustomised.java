@@ -56,7 +56,9 @@ public class Testcustomised {
 	{
 		statobj.title();
 		statobj.accnt();
-		
+		statobj.fromdt();
+		statobj.todate();
+		statobj.amount();
 	}
 	
 	@AfterClass
