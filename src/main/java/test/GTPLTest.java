@@ -66,30 +66,60 @@ public class GTPLTest {
 	}
 
 	@Test(priority = 6)
+	public void DateOfFormat() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.formatDateOfBirth();
+	}
+
+	@Test(priority = 7)
 	public void AddressFormat() {
 		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
 		obj.formatAddress();
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void CityFormat() {
 		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
 		obj.formatCity();
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void StateFormat() {
 		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
 		obj.formatState();
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 10)
+	public void PINFormat() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.formatPIN();
+	}
+
+	@Test(priority = 11)
 	public void TelephoneNumberFormat() {
 		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
 		obj.formatTelephoneNumber();
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 12)
+	public void EmailIdFormat() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.formatEmailId();
+	}
+
+	@Test(priority = 13)
+	public void SubmitButtonFunctionality() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.functionalitySubmitButton();
+	}
+
+	@Test(priority = 14)
+	public void ResetButtonFunctionality() {
+		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
+		obj.functionalityResetButton();
+	}
+
+	@Test(priority = 15)
 	public void HomeLinkFunctionality() {
 		GTPLNewCustomerEntryPage obj = new GTPLNewCustomerEntryPage(driver);
 		obj.functionalityHomeLink();

@@ -2,6 +2,7 @@ package objects;
 
 import java.util.Scanner;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,7 +33,9 @@ public class GTPLNewCustomerEntryPage {
 	By AlertCustomerName = By.xpath("//*[@id='message']");
 	By AlertCity = By.xpath("//*[@id='message4']");
 	By AlertState = By.xpath("//*[@id='message5']");
+	By AlertPIN = By.xpath("//*[@id='message6']");
 	By AlertTelephoneNumber = By.xpath("//*[@id='message7']");
+	By AlertEmailId = By.xpath("//*[@id='message9']");
 
 	public void NewCustomerEntryPageTitle() {
 		String actualTitle = "Gtpl Bank New Customer Entry Page";
@@ -113,6 +116,25 @@ public class GTPLNewCustomerEntryPage {
 		}
 	}
 
+	public void formatDateOfBirth() {
+		wait = new WebDriverWait(driver, 20);
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Date of Birth : ");
+		String enterdateOfBirth = sc.nextLine();
+		String regex = "[0-9]+";
+
+		if (enterdateOfBirth.matches(regex)) {
+			WebElement dateOfBirth = wait.until(ExpectedConditions.visibilityOfElementLocated(DateOfBirth));
+			dateOfBirth.sendKeys(enterdateOfBirth);
+		} else if (!enterdateOfBirth.matches(regex)) {
+			WebElement dateOfBirth = wait.until(ExpectedConditions.visibilityOfElementLocated(DateOfBirth));
+			dateOfBirth.sendKeys(enterdateOfBirth);
+			System.out.println("invalid");
+		}
+
+	}
+
 	public void formatAddress() {
 		wait = new WebDriverWait(driver, 20);
 		@SuppressWarnings("resource")
@@ -177,6 +199,27 @@ public class GTPLNewCustomerEntryPage {
 		}
 	}
 
+	public void formatPIN() {
+		wait = new WebDriverWait(driver, 20);
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the PIN : ");
+		String enterPIN = sc.nextLine();
+		String regex = "^[0-9]{6}$";
+
+		if (enterPIN.matches(regex)) {
+			WebElement pin = wait.until(ExpectedConditions.visibilityOfElementLocated(PIN));
+			pin.sendKeys(enterPIN);
+		}
+
+		else if (!enterPIN.matches(regex) || !enterPIN.matches("\\s") || !enterPIN.matches("\\s[0-9]{5}")) {
+			WebElement pin = wait.until(ExpectedConditions.visibilityOfElementLocated(PIN));
+			pin.sendKeys(enterPIN);
+			WebElement alertPIN = wait.until(ExpectedConditions.visibilityOfElementLocated(AlertPIN));
+			System.out.println(alertPIN.getText());
+		}
+	}
+
 	public void formatTelephoneNumber() {
 		wait = new WebDriverWait(driver, 20);
 		@SuppressWarnings("resource")
@@ -197,6 +240,42 @@ public class GTPLNewCustomerEntryPage {
 					.until(ExpectedConditions.visibilityOfElementLocated(AlertTelephoneNumber));
 			System.out.println(alertTelephoneNumber.getText());
 		}
+	}
+
+	public void formatEmailId() {
+		wait = new WebDriverWait(driver, 20);
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Email Id : ");
+		String enterEmailId = sc.nextLine();
+		String regex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+
+		if (enterEmailId.matches(regex)) {
+			WebElement email = wait.until(ExpectedConditions.visibilityOfElementLocated(Email));
+			email.sendKeys(enterEmailId);
+		}
+
+		else if (!enterEmailId.matches(regex) || !enterEmailId.matches("\\s")) {
+			WebElement email = wait.until(ExpectedConditions.visibilityOfElementLocated(Email));
+			email.sendKeys(enterEmailId);
+			WebElement alertEmailId = wait.until(ExpectedConditions.visibilityOfElementLocated(AlertEmailId));
+			System.out.println(alertEmailId.getText());
+		}
+	}
+
+	public void functionalitySubmitButton() {
+		wait = new WebDriverWait(driver, 20);
+		WebElement submit = wait.until(ExpectedConditions.visibilityOfElementLocated(SubmitButton));
+		submit.click();
+
+	}
+
+	public void functionalityResetButton() {
+		wait = new WebDriverWait(driver, 20);
+		driver.navigate().back();
+		WebElement reset = wait.until(ExpectedConditions.visibilityOfElementLocated(Reset));
+		reset.click();
+
 	}
 
 	public void functionalityHomeLink() {
