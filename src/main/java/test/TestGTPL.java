@@ -7,10 +7,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import editCustomerObjects.GTPLEditCustomerPage;
+import editCustomerObjects.GTPLHomePage;
+import editCustomerObjects.GTPLLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pages.GTPLEditCustomerPage;
-import pages.GTPLHomePage;
-import pages.GTPLLoginPage;
 
 public class TestGTPL {
 	WebDriver driver;
@@ -84,15 +84,22 @@ public class TestGTPL {
 	}
 	
 	@Test(priority = 9)
-	public void ResetButton() {
+	public void ResetButtonTest() {
 		GTPLEditCustomerPage page10=new GTPLEditCustomerPage(driver);
 		page10.ResetButton();
 	}
 	
 	@Test(priority = 10)
-	public void inputFormatTest() {
+	@Parameters({"try1","try2","try3","try4","try5"})
+	public void inputFormatTest(String try1, String try2, String try3, String try4, String try5) {
 		GTPLEditCustomerPage page11=new GTPLEditCustomerPage(driver);
-		page11.inputFormat();
+		page11.inputFormat(try1, try2, try3, try4, try5);
+	}
+	
+	@Test(priority = 11)
+	public void HomeLinkTest() {
+		GTPLEditCustomerPage page10=new GTPLEditCustomerPage(driver);
+		page10.HomeLink();
 	}
 	
 	@AfterClass

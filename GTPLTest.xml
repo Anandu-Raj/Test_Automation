@@ -8,6 +8,11 @@
 		<parameter name="pword" value="gEvyrAb" />
 		<parameter name="HPTitle" value="GTPL Bank Manager HomePage" />
 		<parameter name="ECPTitle" value="Gtpl Bank Edit Customer Page" />
+		<parameter name="try1" value="" />
+		<parameter name="try2" value="12345" />
+		<parameter name="try3" value="sud@123" />
+		<parameter name="try4" value="65 978" />
+		<parameter name="try5" value="65978" />
 		<classes>
 			<class name="test.TestGTPL" />
 
