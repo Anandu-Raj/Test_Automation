@@ -35,7 +35,6 @@ public class Addaccount {
 		String fieldText = custid.getAttribute("value");
 		System.out.println("Input=" + fieldText);
 
-
 		if (fieldText.matches("[0-9]+")) {
 			System.out.println("**********valid input in CustomerID field");
 		} else {
@@ -64,32 +63,34 @@ public class Addaccount {
 	public void Initialdeposit_display() {
 		wait = new WebDriverWait(driver, 20);
 		WebElement inideposit = wait.until(ExpectedConditions.visibilityOfElementLocated(initialdeposit));
-		inideposit.sendKeys("50m0");
+		inideposit.sendKeys("400a");
 		Assert.assertEquals(true, inideposit.isDisplayed());
 		System.out.println("Initial deposit field displayed");
 
 		String fieldText = inideposit.getAttribute("value");
-        System.out.println("Input=" + fieldText);
-		
+		System.out.println("Input=" + fieldText);
 
-		int deposit = Integer.parseInt(fieldText);
-		if (deposit >= 500) {
-			System.out.println("**********valid initial deposit");
+		if (fieldText.matches("[0-9]+")) {
+			int deposit = Integer.parseInt(fieldText);
+			if (deposit >= 500) {
+				System.out.println("**********valid initial deposit");
+			} else {
+				System.out.println("enter grate than 500");
+			}
 		}
-
-		else {
-			System.out.println("**********Please enter grater than 500 rupees ");
+     else {
+			System.out.println("**********Invalid input in Initial deposit field ");
 		}
-		
 
 	}
 
 	public void Submit_display() {
 		wait = new WebDriverWait(driver, 20);
 		WebElement submitbtn = wait.until(ExpectedConditions.visibilityOfElementLocated(submit));
-		submitbtn.click();
 		Assert.assertEquals(true, submitbtn.isDisplayed());
 		System.out.println("Submitt button displayed");
+		submitbtn.click();
+
 	}
 
 	public void Reset_display() {
