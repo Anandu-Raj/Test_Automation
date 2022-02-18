@@ -6,7 +6,8 @@
 		<parameter name="ID" value="mngr384303" />
 		<parameter name="password" value="pEmeryt" />
 		<classes>
-			<class name="Test_Scenario.GTPL_Test" />
+			<class name="EditAccountTest_Scenario.GTPL_Test" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
+

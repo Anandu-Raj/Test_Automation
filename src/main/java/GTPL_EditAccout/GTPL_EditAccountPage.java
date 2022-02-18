@@ -1,4 +1,4 @@
-package GTPL_Auto;
+package GTPL_EditAccout;
 
 import java.util.Scanner;
 import org.openqa.selenium.By;
@@ -57,31 +57,43 @@ public class GTPL_EditAccountPage {
 		System.out.println(" > Home Link is displayed");
 	}
 
-	public void editAccount() {
+	public void editAccountValidation() {
+		// TODO Auto-generated method stub
+		wait = new WebDriverWait(driver, 20);
 		@SuppressWarnings("resource")
-		Scanner reader = new Scanner(System.in);
-		System.out.println("Enter Account No > ");
-
-		String accno = reader.next();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("------------------------------------------------");
+		System.out.println(" > Enter the Account Number : ");
+		String enterAccountNumber = sc.nextLine();
 		String regex = "[0-9]+";
 
-		if (accno.matches(regex)) {
-			WebElement AccountNo = wait.until(ExpectedConditions.visibilityOfElementLocated(accountNo));
-			AccountNo.sendKeys(accno);
+		if (enterAccountNumber.matches(regex)) {
+			WebElement accountNumber = wait.until(ExpectedConditions.visibilityOfElementLocated(accountNo));
+			accountNumber.sendKeys(enterAccountNumber);
 			WebElement submitButton = wait.until(ExpectedConditions.visibilityOfElementLocated(SubmitButton));
 			submitButton.click();
-		} else {
-			WebElement AccountNo = wait.until(ExpectedConditions.visibilityOfElementLocated(accountNo));
-			AccountNo.sendKeys(accno);
-			WebElement Alert = wait.until(ExpectedConditions.visibilityOfElementLocated(alert));
 			System.out.println("------------------------------------------------");
-			System.out.println(" >" + Alert.getText());
+			System.out.println(" > Edit Account page is displayed ");
 		}
+
+		else if (!enterAccountNumber.matches(regex) || !enterAccountNumber.matches("\\s")) {
+			WebElement accountNumber = wait.until(ExpectedConditions.visibilityOfElementLocated(accountNo));
+			accountNumber.sendKeys(enterAccountNumber);
+			WebElement Alert = wait.until(ExpectedConditions.visibilityOfElementLocated(alert));
+			System.out.println(Alert.getText());
+		}
+
 	}
 
-	public void resetButton(String accNo) {
+	public void resetButton() {
+		driver.navigate().back();
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		System.out.println("------------------------------------------------");
+		System.out.println(" > Enter the Account Number : ");
+		String enterAccountNumber = sc.nextLine();
 		WebElement AccountNo = wait.until(ExpectedConditions.visibilityOfElementLocated(accountNo));
-		AccountNo.sendKeys(accNo);
+		AccountNo.sendKeys(enterAccountNumber);
 		WebElement resetButton = wait.until(ExpectedConditions.visibilityOfElementLocated(ResetButton));
 		resetButton.click();
 		System.out.println("------------------------------------------------");
@@ -94,4 +106,5 @@ public class GTPL_EditAccountPage {
 		System.out.println("------------------------------------------------");
 		System.out.println(" > " + driver.getTitle());
 	}
+
 }

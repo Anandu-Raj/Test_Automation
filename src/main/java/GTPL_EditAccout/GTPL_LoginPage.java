@@ -1,4 +1,4 @@
-package GTPL_Auto;
+package GTPL_EditAccout;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
