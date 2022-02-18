@@ -9,26 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">gtpl</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">78,894</td><td></td><td></td></tr>
+<tr><td><a href="#t0">gtpl</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">69,490</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">gtpl &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">login.Gtpltest</td><td><a href="#m0">DisplayMangerpage</a></td><td rowspan="1">1645099165085</td><td rowspan="1">50302</td></tr><tr><th colspan="4">gtpl &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">login.Gtpltest</td><td><a href="#m1">DispalyLoginButton</a></td><td rowspan="1">1645099150144</td><td rowspan="1">213</td></tr><tr class="passedeven"><td><a href="#m2">DispalyUserid</a></td><td rowspan="1">1645099150367</td><td rowspan="1">72</td></tr><tr class="passedeven"><td><a href="#m3">DisplayReset</a></td><td rowspan="1">1645099150444</td><td rowspan="1">76</td></tr><tr class="passedeven"><td><a href="#m4">Displaypassword</a></td><td rowspan="1">1645099150523</td><td rowspan="1">53</td></tr><tr class="passedeven"><td><a href="#m5">Mandatoryfield</a></td><td rowspan="1">1645099150578</td><td rowspan="1">51</td></tr><tr class="passedeven"><td><a href="#m6">TitlePage</a></td><td rowspan="1">1645099215408</td><td rowspan="1">16</td></tr><tr class="passedeven"><td><a href="#m7">checkTheUrl</a></td><td rowspan="1">1645099215393</td><td rowspan="1">12</td></tr><tr class="passedeven"><td><a href="#m8">passWord</a></td><td rowspan="1">1645099150775</td><td rowspan="1">14308</td></tr><tr class="passedeven"><td><a href="#m9">user</a></td><td rowspan="1">1645099150631</td><td rowspan="1">140</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">gtpl &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">login.Gtpltest</td><td><a href="#m0">logout</a></td><td rowspan="1">1645185809869</td><td rowspan="1">20349</td></tr><tr><th colspan="4">gtpl &#8212; passed</th></tr><tr class="passedeven"><td rowspan="14">login.Gtpltest</td><td><a href="#m1">DispalyLoginButton</a></td><td rowspan="1">1645185797160</td><td rowspan="1">239</td></tr><tr class="passedeven"><td><a href="#m2">DispalyUserid</a></td><td rowspan="1">1645185791031</td><td rowspan="1">383</td></tr><tr class="passedeven"><td><a href="#m3">DisplayMangerpage</a></td><td rowspan="1">1645185808917</td><td rowspan="1">949</td></tr><tr class="passedeven"><td><a href="#m4">DisplayReset</a></td><td rowspan="1">1645185797402</td><td rowspan="1">87</td></tr><tr class="passedeven"><td><a href="#m5">Displaypassword</a></td><td rowspan="1">1645185795723</td><td rowspan="1">1433</td></tr><tr class="passedeven"><td><a href="#m6">Mandatoryfield</a></td><td rowspan="1">1645185797495</td><td rowspan="1">193</td></tr><tr class="passedeven"><td><a href="#m7">ResetFunction</a></td><td rowspan="1">1645185797690</td><td rowspan="1">738</td></tr><tr class="passedeven"><td><a href="#m8">TitlePage</a></td><td rowspan="1">1645185808900</td><td rowspan="1">14</td></tr><tr class="passedeven"><td><a href="#m9">checkTheUrl</a></td><td rowspan="1">1645185791429</td><td rowspan="1">24</td></tr><tr class="passedeven"><td><a href="#m10">invalidPassworduserid</a></td><td rowspan="1">1645185791456</td><td rowspan="1">1355</td></tr><tr class="passedeven"><td><a href="#m11">invalidPasswordvaliduserid</a></td><td rowspan="1">1645185792815</td><td rowspan="1">2897</td></tr><tr class="passedeven"><td><a href="#m12">passWord</a></td><td rowspan="1">1645185801458</td><td rowspan="1">7439</td></tr><tr class="passedeven"><td><a href="#m13">user</a></td><td rowspan="1">1645185799725</td><td rowspan="1">1729</td></tr><tr class="passedeven"><td><a href="#m14">validPasswordinvaliduserid</a></td><td rowspan="1">1645185798431</td><td rowspan="1">1289</td></tr></tbody>
 </table>
-<h2>gtpl</h2><h3 id="m0">login.Gtpltest#DisplayMangerpage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=Log out&apos;] (tried for 50 second(s) with 500 milliseconds interval)
+<h2>gtpl</h2><h3 id="m0">login.Gtpltest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.partialLinkText: Logout (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at login.Mangerpage.DisplayMangerpage(Mangerpage.java:49)
-	at login.Gtpltest.DisplayMangerpage(Gtpltest.java:86)
+	at login.Mangerpage.logout(Mangerpage.java:71)
+	at login.Gtpltest.logout(Gtpltest.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[text()=Log out&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[text()=Log out&apos;]&apos; is not a valid XPath expression.
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
   (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-B1SBRCM&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;DESKTOP-B1SBRCM&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 16cbea9a722a29c8ac7980f1c1eff050
-*** Element info: {Using=xpath, value=//*[text()=Log out&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d41478eefb12b4e42cb37a3e6ecbca40
+*** Element info: {Using=partial link text, value=Logout}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -36,8 +35,8 @@ Session ID: 16cbea9a722a29c8ac7980f1c1eff050
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
@@ -46,12 +45,17 @@ Session ID: 16cbea9a722a29c8ac7980f1c1eff050
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">login.Gtpltest#DispalyLoginButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">login.Gtpltest#DispalyUserid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">login.Gtpltest#DisplayReset</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">login.Gtpltest#Displaypassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">login.Gtpltest#Mandatoryfield</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">login.Gtpltest#TitlePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">login.Gtpltest#checkTheUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">login.Gtpltest#passWord</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pUnEteq</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">login.Gtpltest#user</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>mngr384160</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">login.Gtpltest#DisplayMangerpage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">login.Gtpltest#DisplayReset</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">login.Gtpltest#Displaypassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">login.Gtpltest#Mandatoryfield</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">login.Gtpltest#ResetFunction</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">login.Gtpltest#TitlePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">login.Gtpltest#checkTheUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">login.Gtpltest#invalidPassworduserid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">login.Gtpltest#invalidPasswordvaliduserid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">login.Gtpltest#passWord</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pUnEteq</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">login.Gtpltest#user</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>mngr384160</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">login.Gtpltest#validPasswordinvaliduserid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

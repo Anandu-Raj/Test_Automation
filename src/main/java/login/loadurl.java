@@ -1,5 +1,6 @@
 package login;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,19 +32,13 @@ public class loadurl {
 	}
 
 	public void checkURL() {
-		String actualUrl = "https://demo.guru99.com/V1/html/Managerhomepage.php";
+		String actualUrl = "https://demo.guru99.com/V1/index.php";
 		String expectedUrl = driver.getCurrentUrl();
 		Assert.assertEquals(expectedUrl, actualUrl);
 		System.out.println("Actual URL = Expected URL");
 	}
 
-	public void Display() {
-		String actualUrl = "https://demo.guru99.com/V1/html/Managerhomepage.php";
-		String expectedUrl = driver.getCurrentUrl();
-		Assert.assertEquals(expectedUrl, actualUrl);
-		System.out.println("Actual URL = Expected URL");
-	}
-
+	
 	public void userID(String ID) {
 		wait = new WebDriverWait(driver, 20);
 		WebElement UserId = wait.until(ExpectedConditions.visibilityOfElementLocated(UserID));
@@ -52,11 +47,14 @@ public class loadurl {
 
 	public void PassWord(String password) {
 		wait = new WebDriverWait(driver, 20);
-		WebElement passWord = wait.until(ExpectedConditions.visibilityOfElementLocated(Password));
-		passWord.sendKeys(password);
-		WebElement login = wait.until(ExpectedConditions.visibilityOfElementLocated(LOGIN));
-		login.click();
-	}
+		WebElement Password1 = wait.until(ExpectedConditions.visibilityOfElementLocated(Password));
+		 Password1.sendKeys(password);
+		 WebElement login1 = wait.until(ExpectedConditions.visibilityOfElementLocated(LOGIN));
+		 login1.click();
+			}
+	
+	
+	
 
 	public void DispalyLoginButton() {
 		wait = new WebDriverWait(driver, 20);
@@ -94,27 +92,64 @@ public class loadurl {
 		Assert.assertEquals(true, DispalyUserid.isDisplayed());
 		System.out.println("MandatoryField  is displayed");
 	}
+	
+	public void ResetFunction() {
+		wait = new WebDriverWait(driver, 20);
 
-	
-	public void blank()
-	{
-		WebElement inputBox = driver.findElement(By.id("inputBoxId"));
-		String textInsideInputBox = inputBox.getAttribute("value");
-		if(textInsideInputBox.isEmpty()) 
-		{ 
-			System.out.println("Input field is empty"); 
-		}
-	}
-//	wait = new WebDriverWait(driver, 20);
-//	@SuppressWarnings("resource") Scanner sc = new Scanner(System.in);
-//	System.out.println("Enter the Customer Name : ");
-//	String Customername = sc.nextLine(); 
-//	String regex = "[a-zA-Z]+"; 
-//	if (!Customername.matches(regex)) 
-//	{ WebElement customerName = wait.until(ExpectedConditions.visibilityOfElementLocated(CustomerName));
-//	customerName.sendKeys(Customername); 
-//	WebElement alert = wait.until(ExpectedConditions.visibilityOfElementLocated(Alert));
-//	System.out.println(alert.getText());
+		WebElement UserID1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='uid']")));
+		UserID1.sendKeys("abcd@gmail.com");
+		WebElement password1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='password']")));
+		password1.sendKeys("abcdefghlkjl");
+
+		WebElement Resetfunction = wait.until(ExpectedConditions.visibilityOfElementLocated(Reset));
+		Resetfunction.click();
+		Assert.assertEquals(true, Resetfunction.isDisplayed());
+		System.out.println("All Values are cleared ,Reset is working fine");
 	}
 	
+	
+	
+	
+	public void  invalidPassworduserid() {
+		
+		driver.findElement(By.xpath("//*[@name='uid']")).sendKeys("abcd@gmail.com");
+		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("abcdefghlkjl");
+		driver.findElement(By.xpath("//*[@name='btnLogin']")).click();
+		Alert a= driver.switchTo().alert();
+		String x=a.getText();
+		System.out.println(x); a.accept(); 
+	
+		
+	}
+
+	public void  validPasswordinvaliduserid()  {
+		
+		driver.findElement(By.xpath("//*[@name='uid']")).sendKeys("abcd@gmail.com");
+		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("pUnEteq");
+		driver.findElement(By.xpath("//*[@name='btnLogin']")).click();
+		Alert a= driver.switchTo().alert();
+		String x=a.getText();
+		System.out.println(x); a.accept(); 
+		
+	
+		
+	}
+	
+	public void  invalidPasswordvaliduserid() {
+		
+		driver.findElement(By.xpath("//*[@name='uid']")).sendKeys("mngr384160");
+		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("abcdefghlkjl");
+		driver.findElement(By.xpath("//*[@name='btnLogin']")).click();
+		Alert a= driver.switchTo().alert();
+		String x=a.getText();
+		System.out.println(x); a.accept(); 
+	
+		
+	}
+	
+	
+	
+	}
+	
+
 	

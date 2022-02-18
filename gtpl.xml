@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="gtpl">
   <parameter name="url" value="https://demo.guru99.com/V1/index.php" />
-		<parameter name="ID" value="mngr384160" />
+  	<parameter name="ID" value="mngr384160" />
 		<parameter name="password" value="pUnEteq" />
-		<classes>
+			<classes>
 			<class name="login.Gtpltest" />
 		</classes>
   </test> <!-- gtpl -->

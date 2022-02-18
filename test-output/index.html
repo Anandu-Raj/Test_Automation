@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="DisplayMangerpage">DisplayMangerpage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -128,6 +128,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="DisplayMangerpage">DisplayMangerpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="DisplayReset">DisplayReset</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -143,6 +148,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="ResetFunction">ResetFunction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="TitlePage">TitlePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -153,12 +163,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="invalidPassworduserid">invalidPassworduserid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="invalidPasswordvaliduserid">invalidPasswordvaliduserid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="passWord(pUnEteq)">passWord(pUnEteq)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="user(mngr384160)">user(mngr384160)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="login.Gtpltest" class="method navigator-link" hash-for-method="validPasswordinvaliduserid">validPasswordinvaliduserid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -181,25 +206,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DisplayMangerpage">
-                  </a> <!-- DisplayMangerpage -->
-                  <span class="method-name">DisplayMangerpage</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=Log out&apos;] (tried for 50 second(s) with 500 milliseconds interval)
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.partialLinkText: Logout (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at login.Mangerpage.DisplayMangerpage(Mangerpage.java:49)
-	at login.Gtpltest.DisplayMangerpage(Gtpltest.java:86)
+	at login.Mangerpage.logout(Mangerpage.java:71)
+	at login.Gtpltest.logout(Gtpltest.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[text()=Log out&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[text()=Log out&apos;]&apos; is not a valid XPath expression.
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
   (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-B1SBRCM&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;DESKTOP-B1SBRCM&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 16cbea9a722a29c8ac7980f1c1eff050
-*** Element info: {Using=xpath, value=//*[text()=Log out&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d41478eefb12b4e42cb37a3e6ecbca40
+*** Element info: {Using=partial link text, value=Logout}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -207,8 +231,8 @@ Session ID: 16cbea9a722a29c8ac7980f1c1eff050
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
@@ -242,6 +266,13 @@ Session ID: 16cbea9a722a29c8ac7980f1c1eff050
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="DisplayMangerpage">
+                  </a> <!-- DisplayMangerpage -->
+                  <span class="method-name">DisplayMangerpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="DisplayReset">
                   </a> <!-- DisplayReset -->
                   <span class="method-name">DisplayReset</span>
@@ -263,6 +294,13 @@ Session ID: 16cbea9a722a29c8ac7980f1c1eff050
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="ResetFunction">
+                  </a> <!-- ResetFunction -->
+                  <span class="method-name">ResetFunction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="TitlePage">
                   </a> <!-- TitlePage -->
                   <span class="method-name">TitlePage</span>
@@ -273,6 +311,20 @@ Session ID: 16cbea9a722a29c8ac7980f1c1eff050
                   <a name="checkTheUrl">
                   </a> <!-- checkTheUrl -->
                   <span class="method-name">checkTheUrl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPassworduserid">
+                  </a> <!-- invalidPassworduserid -->
+                  <span class="method-name">invalidPassworduserid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPasswordvaliduserid">
+                  </a> <!-- invalidPasswordvaliduserid -->
+                  <span class="method-name">invalidPasswordvaliduserid</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -289,6 +341,13 @@ Session ID: 16cbea9a722a29c8ac7980f1c1eff050
                   </a> <!-- user(mngr384160) -->
                   <span class="method-name">user</span>
                   <span class="parameters">(mngr384160)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validPasswordinvaliduserid">
+                  </a> <!-- validPasswordinvaliduserid -->
+                  <span class="method-name">validPasswordinvaliduserid</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -348,52 +407,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DisplayMangerpage')
+data.setCell(0, 1, 'logout')
 data.setCell(0, 2, 'login.Gtpltest')
-data.setCell(0, 3, 50302);
+data.setCell(0, 3, 20349);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'passWord')
 data.setCell(1, 2, 'login.Gtpltest')
-data.setCell(1, 3, 14308);
+data.setCell(1, 3, 7439);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'DispalyLoginButton')
+data.setCell(2, 1, 'invalidPasswordvaliduserid')
 data.setCell(2, 2, 'login.Gtpltest')
-data.setCell(2, 3, 213);
+data.setCell(2, 3, 2897);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'user')
 data.setCell(3, 2, 'login.Gtpltest')
-data.setCell(3, 3, 140);
+data.setCell(3, 3, 1729);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'DisplayReset')
+data.setCell(4, 1, 'Displaypassword')
 data.setCell(4, 2, 'login.Gtpltest')
-data.setCell(4, 3, 76);
+data.setCell(4, 3, 1433);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'DispalyUserid')
+data.setCell(5, 1, 'invalidPassworduserid')
 data.setCell(5, 2, 'login.Gtpltest')
-data.setCell(5, 3, 72);
+data.setCell(5, 3, 1355);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Displaypassword')
+data.setCell(6, 1, 'validPasswordinvaliduserid')
 data.setCell(6, 2, 'login.Gtpltest')
-data.setCell(6, 3, 53);
+data.setCell(6, 3, 1289);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Mandatoryfield')
+data.setCell(7, 1, 'DisplayMangerpage')
 data.setCell(7, 2, 'login.Gtpltest')
-data.setCell(7, 3, 51);
+data.setCell(7, 3, 949);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TitlePage')
+data.setCell(8, 1, 'ResetFunction')
 data.setCell(8, 2, 'login.Gtpltest')
-data.setCell(8, 3, 16);
+data.setCell(8, 3, 738);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'checkTheUrl')
+data.setCell(9, 1, 'DispalyUserid')
 data.setCell(9, 2, 'login.Gtpltest')
-data.setCell(9, 3, 12);
+data.setCell(9, 3, 383);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'DispalyLoginButton')
+data.setCell(10, 2, 'login.Gtpltest')
+data.setCell(10, 3, 239);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Mandatoryfield')
+data.setCell(11, 2, 'login.Gtpltest')
+data.setCell(11, 3, 193);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'DisplayReset')
+data.setCell(12, 2, 'login.Gtpltest')
+data.setCell(12, 3, 87);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkTheUrl')
+data.setCell(13, 2, 'login.Gtpltest')
+data.setCell(13, 3, 24);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TitlePage')
+data.setCell(14, 2, 'login.Gtpltest')
+data.setCell(14, 3, 14);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -425,50 +504,70 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">DispalyLoginButton</span>
-                <span class="method-start">13330 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">DispalyUserid</span>
-                <span class="method-start">13553 ms</span>
+                <span class="method-start">29859 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">DisplayReset</span>
-                <span class="method-start">13630 ms</span>
+                <span class="method-name">checkTheUrl</span>
+                <span class="method-start">30257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidPassworduserid</span>
+                <span class="method-start">30284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidPasswordvaliduserid</span>
+                <span class="method-start">31643 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Displaypassword</span>
-                <span class="method-start">13709 ms</span>
+                <span class="method-start">34551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DispalyLoginButton</span>
+                <span class="method-start">35988 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DisplayReset</span>
+                <span class="method-start">36230 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Mandatoryfield</span>
-                <span class="method-start">13764 ms</span>
+                <span class="method-start">36323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ResetFunction</span>
+                <span class="method-start">36518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validPasswordinvaliduserid</span>
+                <span class="method-start">37259 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">user(mngr384160)</span>
-                <span class="method-start">13817 ms</span>
+                <span class="method-start">38553 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passWord(pUnEteq)</span>
-                <span class="method-start">13961 ms</span>
+                <span class="method-start">40286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TitlePage</span>
+                <span class="method-start">47728 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DisplayMangerpage</span>
+                <span class="method-start">47745 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">DisplayMangerpage</span>
-                <span class="method-start">28271 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">checkTheUrl</span>
-                <span class="method-start">78579 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TitlePage</span>
-                <span class="method-start">78594 ms</span>
+                <span class="method-name">logout</span>
+                <span class="method-start">48697 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">stop</span>
-                <span class="method-start">78613 ms</span>
+                <span class="method-start">69054 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
