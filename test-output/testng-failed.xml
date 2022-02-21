@@ -9,7 +9,6 @@
       <class name="login.Gtpltest">
         <methods>
           <include name="start"/>
-          <include name="stop"/>
           <include name="logout"/>
         </methods>
       </class> <!-- login.Gtpltest -->

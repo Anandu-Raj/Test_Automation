@@ -28,7 +28,6 @@ public class loadurl {
 		String expectedtitle = driver.getTitle();
 		Assert.assertEquals(expectedtitle, actualtitle);
 		System.out.println("Actual tittle = Expected title");
-
 	}
 
 	public void checkURL() {
@@ -38,7 +37,6 @@ public class loadurl {
 		System.out.println("Actual URL = Expected URL");
 	}
 
-	
 	public void userID(String ID) {
 		wait = new WebDriverWait(driver, 20);
 		WebElement UserId = wait.until(ExpectedConditions.visibilityOfElementLocated(UserID));
@@ -48,13 +46,10 @@ public class loadurl {
 	public void PassWord(String password) {
 		wait = new WebDriverWait(driver, 20);
 		WebElement Password1 = wait.until(ExpectedConditions.visibilityOfElementLocated(Password));
-		 Password1.sendKeys(password);
-		 WebElement login1 = wait.until(ExpectedConditions.visibilityOfElementLocated(LOGIN));
-		 login1.click();
-			}
-	
-	
-	
+		Password1.sendKeys(password);
+		WebElement login1 = wait.until(ExpectedConditions.visibilityOfElementLocated(LOGIN));
+		login1.click();
+	}
 
 	public void DispalyLoginButton() {
 		wait = new WebDriverWait(driver, 20);
@@ -92,13 +87,14 @@ public class loadurl {
 		Assert.assertEquals(true, DispalyUserid.isDisplayed());
 		System.out.println("MandatoryField  is displayed");
 	}
-	
+
 	public void ResetFunction() {
 		wait = new WebDriverWait(driver, 20);
 
 		WebElement UserID1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='uid']")));
 		UserID1.sendKeys("abcd@gmail.com");
-		WebElement password1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='password']")));
+		WebElement password1 = wait
+				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='password']")));
 		password1.sendKeys("abcdefghlkjl");
 
 		WebElement Resetfunction = wait.until(ExpectedConditions.visibilityOfElementLocated(Reset));
@@ -106,50 +102,57 @@ public class loadurl {
 		Assert.assertEquals(true, Resetfunction.isDisplayed());
 		System.out.println("All Values are cleared ,Reset is working fine");
 	}
-	
-	
-	
-	
-	public void  invalidPassworduserid() {
-		
-		driver.findElement(By.xpath("//*[@name='uid']")).sendKeys("abcd@gmail.com");
-		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("abcdefghlkjl");
-		driver.findElement(By.xpath("//*[@name='btnLogin']")).click();
-		Alert a= driver.switchTo().alert();
-		String x=a.getText();
-		System.out.println(x); a.accept(); 
-	
-		
-	}
 
-	public void  validPasswordinvaliduserid()  {
-		
+	public void validPasswordinvaliduserid() {
+
 		driver.findElement(By.xpath("//*[@name='uid']")).sendKeys("abcd@gmail.com");
 		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("pUnEteq");
 		driver.findElement(By.xpath("//*[@name='btnLogin']")).click();
-		Alert a= driver.switchTo().alert();
-		String x=a.getText();
-		System.out.println(x); a.accept(); 
-		
-	
-		
-	}
-	
-	public void  invalidPasswordvaliduserid() {
-		
-		driver.findElement(By.xpath("//*[@name='uid']")).sendKeys("mngr384160");
-		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("abcdefghlkjl");
-		driver.findElement(By.xpath("//*[@name='btnLogin']")).click();
-		Alert a= driver.switchTo().alert();
-		String x=a.getText();
-		System.out.println(x); a.accept(); 
-	
-		
-	}
-	
-	
-	
+		Alert a = driver.switchTo().alert();
+		String x = a.getText();
+		System.out.println(x);
+		a.accept();
 	}
 	
 
-	
+	public void invalidPassworduserid() {
+
+		driver.findElement(By.xpath("//*[@name='uid']")).sendKeys("abcd@gmail.com");
+		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("abcdefghlkjl");
+		driver.findElement(By.xpath("//*[@name='btnLogin']")).click();
+		Alert a = driver.switchTo().alert();
+		String x = a.getText();
+		System.out.println(x);
+		a.accept();
+	}
+
+	public void invalidPasswordvaliduserid() {
+
+		driver.findElement(By.xpath("//*[@name='uid']")).sendKeys("mngr384160");
+		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("abcdefghlkjl");
+		driver.findElement(By.xpath("//*[@name='btnLogin']")).click();
+		Alert a = driver.switchTo().alert();
+		String x = a.getText();
+		System.out.println(x);
+		a.accept();
+	}
+
+	public void EmptyUserIDvalidPassword() {
+		driver.findElement(By.xpath("//*[@name='uid']"));
+		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("pUnEteq");
+		driver.findElement(By.xpath("//*[text()='User-ID must not be blank']"));
+		Alert b = driver.switchTo().alert();
+		String x1 = b.getText();
+		System.out.println(x1);
+
+	}
+//	public void Validusernamepassword() {
+//		driver.findElement(By.xpath("//*[@name='uid']"));
+//		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("pUnEteq");
+//		driver.findElement(By.xpath("//*[text()='User-ID must not be blank']"));
+//		Alert b = driver.switchTo().alert();
+//		String x1 = b.getText();
+//		System.out.println(x1);
+
+	}
+}

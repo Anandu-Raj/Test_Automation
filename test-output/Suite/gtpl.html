@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 18 17:32:41 IST 2022</td>
+<td>Started on:</td><td>Mon Feb 21 17:53:23 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>69 seconds (69490 ms)</td>
+<tr><td>Total time:</td><td>39 seconds (39729 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,8 +79,8 @@ function toggleAllBoxes() {
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.partialLinkText: Logout (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at login.Mangerpage.logout(Mangerpage.java:71)
-	at login.Gtpltest.logout(Gtpltest.java:107)
+	at login.Mangerpage.logout(Mangerpage.java:66)
+	at login.Gtpltest.logout(Gtpltest.java:116)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
   (Session info: chrome=98.0.4758.102)
@@ -88,8 +88,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-B1SBRCM&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d41478eefb12b4e42cb37a3e6ecbca40
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3dfae44e5b9ccebd99db24124f7cc776
 *** Element info: {Using=partial link text, value=Logout}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -105,12 +105,12 @@ Session ID: d41478eefb12b4e42cb37a3e6ecbca40
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 30 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace731870416", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace731870416'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.partialLinkText: Logout (tried for 20 second(s) with 500 milliseconds interval)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1286868539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1286868539'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.partialLinkText: Logout (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at login.Mangerpage.logout(Mangerpage.java:71)
-	at login.Gtpltest.logout(Gtpltest.java:107)
+	at login.Mangerpage.logout(Mangerpage.java:66)
+	at login.Gtpltest.logout(Gtpltest.java:116)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,8 +145,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-B1SBRCM&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d41478eefb12b4e42cb37a3e6ecbca40
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3dfae44e5b9ccebd99db24124f7cc776
 *** Element info: {Using=partial link text, value=Logout}
 	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -168,7 +168,7 @@ Session ID: d41478eefb12b4e42cb37a3e6ecbca40
 	... 30 more
 </pre></div></td>
 <td>20</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>login.Gtpltest@6283d8b8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -178,75 +178,75 @@ Session ID: d41478eefb12b4e42cb37a3e6ecbca40
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='login.Gtpltest.validPasswordinvaliduserid()'><b>validPasswordinvaliduserid</b><br>Test class: login.Gtpltest</td>
-<td></td>
-<td>1</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
-<tr>
-<td title='login.Gtpltest.checkTheUrl()'><b>checkTheUrl</b><br>Test class: login.Gtpltest</td>
+<td title='login.Gtpltest.DisplayMangerpage()'><b>DisplayMangerpage</b><br>Test class: login.Gtpltest</td>
 <td></td>
 <td>0</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
-<tr>
-<td title='login.Gtpltest.user()'><b>user</b><br>Test class: login.Gtpltest<br>Parameters: mngr384160</td>
-<td></td>
-<td>1</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>login.Gtpltest@6283d8b8</td></tr>
 <tr>
 <td title='login.Gtpltest.ResetFunction()'><b>ResetFunction</b><br>Test class: login.Gtpltest</td>
 <td></td>
 <td>0</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>login.Gtpltest@6283d8b8</td></tr>
+<tr>
+<td title='login.Gtpltest.validPasswordinvaliduserid()'><b>validPasswordinvaliduserid</b><br>Test class: login.Gtpltest</td>
+<td></td>
+<td>0</td>
+<td>login.Gtpltest@6283d8b8</td></tr>
 <tr>
 <td title='login.Gtpltest.Displaypassword()'><b>Displaypassword</b><br>Test class: login.Gtpltest</td>
 <td></td>
 <td>1</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
-<tr>
-<td title='login.Gtpltest.DisplayReset()'><b>DisplayReset</b><br>Test class: login.Gtpltest</td>
-<td></td>
-<td>0</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
-<tr>
-<td title='login.Gtpltest.invalidPassworduserid()'><b>invalidPassworduserid</b><br>Test class: login.Gtpltest</td>
-<td></td>
-<td>1</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
-<tr>
-<td title='login.Gtpltest.DisplayMangerpage()'><b>DisplayMangerpage</b><br>Test class: login.Gtpltest</td>
-<td></td>
-<td>0</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>login.Gtpltest@6283d8b8</td></tr>
 <tr>
 <td title='login.Gtpltest.DispalyUserid()'><b>DispalyUserid</b><br>Test class: login.Gtpltest</td>
 <td></td>
 <td>0</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>login.Gtpltest@6283d8b8</td></tr>
 <tr>
-<td title='login.Gtpltest.Mandatoryfield()'><b>Mandatoryfield</b><br>Test class: login.Gtpltest</td>
+<td title='login.Gtpltest.user()'><b>user</b><br>Test class: login.Gtpltest<br>Parameters: mngr384160</td>
+<td></td>
+<td>1</td>
+<td>login.Gtpltest@6283d8b8</td></tr>
+<tr>
+<td title='login.Gtpltest.passWord()'><b>passWord</b><br>Test class: login.Gtpltest<br>Parameters: pUnEteq</td>
+<td></td>
+<td>1</td>
+<td>login.Gtpltest@6283d8b8</td></tr>
+<tr>
+<td title='login.Gtpltest.checkTheUrl()'><b>checkTheUrl</b><br>Test class: login.Gtpltest</td>
 <td></td>
 <td>0</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
-<tr>
-<td title='login.Gtpltest.TitlePage()'><b>TitlePage</b><br>Test class: login.Gtpltest</td>
-<td></td>
-<td>0</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>login.Gtpltest@6283d8b8</td></tr>
 <tr>
 <td title='login.Gtpltest.DispalyLoginButton()'><b>DispalyLoginButton</b><br>Test class: login.Gtpltest</td>
 <td></td>
 <td>0</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>login.Gtpltest@6283d8b8</td></tr>
 <tr>
-<td title='login.Gtpltest.passWord()'><b>passWord</b><br>Test class: login.Gtpltest<br>Parameters: pUnEteq</td>
+<td title='login.Gtpltest.TitlePage()'><b>TitlePage</b><br>Test class: login.Gtpltest</td>
 <td></td>
-<td>7</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>0</td>
+<td>login.Gtpltest@6283d8b8</td></tr>
 <tr>
 <td title='login.Gtpltest.invalidPasswordvaliduserid()'><b>invalidPasswordvaliduserid</b><br>Test class: login.Gtpltest</td>
 <td></td>
 <td>2</td>
-<td>login.Gtpltest@3f6b0be5</td></tr>
+<td>login.Gtpltest@6283d8b8</td></tr>
+<tr>
+<td title='login.Gtpltest.Mandatoryfield()'><b>Mandatoryfield</b><br>Test class: login.Gtpltest</td>
+<td></td>
+<td>0</td>
+<td>login.Gtpltest@6283d8b8</td></tr>
+<tr>
+<td title='login.Gtpltest.invalidPassworduserid()'><b>invalidPassworduserid</b><br>Test class: login.Gtpltest</td>
+<td></td>
+<td>0</td>
+<td>login.Gtpltest@6283d8b8</td></tr>
+<tr>
+<td title='login.Gtpltest.DisplayReset()'><b>DisplayReset</b><br>Test class: login.Gtpltest</td>
+<td></td>
+<td>0</td>
+<td>login.Gtpltest@6283d8b8</td></tr>
 </table><p>
 </body>
 </html>

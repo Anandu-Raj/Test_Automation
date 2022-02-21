@@ -48,7 +48,6 @@ public class Mangerpage {
 		System.out.println("MiniStatementd is displayed");
 
 	
-	
 		WebElement DeleteCustomer1 = wait.until(ExpectedConditions.visibilityOfElementLocated(DeleteCustomer));
 		Assert.assertEquals(true, DeleteCustomer1.isDisplayed());
 		System.out.println("DeleteCustomer  is displayed");
@@ -57,12 +56,8 @@ public class Mangerpage {
 		WebElement DeleteAccount1 = wait.until(ExpectedConditions.visibilityOfElementLocated(DeleteAccount));
 		Assert.assertEquals(true, DeleteAccount1.isDisplayed());
 		System.out.println("DeleteAccount  is displayed");
-		
-		
 	}
-	
-	
-	public void logout()
+		public void logout()
 	{
 		wait = new WebDriverWait(driver, 20);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
