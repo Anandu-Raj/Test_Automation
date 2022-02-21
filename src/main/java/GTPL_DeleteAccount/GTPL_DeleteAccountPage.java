@@ -85,6 +85,9 @@ public class GTPL_DeleteAccountPage {
 		}
 
 	}
+	public void validation() {
+		
+	}
 
 	public void resetButton() {
 		driver.navigate().back();

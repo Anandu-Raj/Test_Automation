@@ -11,7 +11,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import GTPL_DeleteAccount.GTPLBank_HomePage;
 import GTPL_DeleteAccount.GTPLBank_LoginPage;
 import GTPL_DeleteAccount.GTPL_DeleteAccountPage;
@@ -99,7 +98,7 @@ public class GTPL_TestMethod {
 
 	@AfterClass
 	public void stop() {
-		 driver.quit();
+		driver.quit();
 
 	}
 }

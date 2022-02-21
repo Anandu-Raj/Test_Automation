@@ -42,8 +42,8 @@ public class GTPL_HomePage {
 		driver.switchTo().frame(Iframe);
 		WebElement iframe = wait.until(ExpectedConditions.visibilityOfElementLocated(SecondIFrame));
 		driver.switchTo().frame(iframe);
-		WebElement Close = wait.until(ExpectedConditions.visibilityOfElementLocated(CloseButton));
-		Close.click();
+		//WebElement Close = wait.until(ExpectedConditions.visibilityOfElementLocated(CloseButton));
+		//Close.click();
 		driver.switchTo().defaultContent();
 	}
 }

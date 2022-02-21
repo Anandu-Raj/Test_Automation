@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-18T11:32:45 IST" name="Suite" finished-at="2022-02-18T11:33:37 IST" duration-ms="51984">
+  <suite started-at="2022-02-21T02:51:43 GMT" name="Suite" finished-at="2022-02-21T02:52:24 GMT" duration-ms="41004">
     <groups>
     </groups>
-    <test started-at="2022-02-18T11:32:45 IST" name="Test" finished-at="2022-02-18T11:33:37 IST" duration-ms="51984">
+    <test started-at="2022-02-21T02:51:43 GMT" name="Test" finished-at="2022-02-21T02:52:24 GMT" duration-ms="41004">
       <class name="EditAccountTest_Scenario.GTPL_Test">
-        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:EditAccountTest_Scenario.GTPL_Test@37d4349f]" started-at="2022-02-18T11:32:45 IST" name="start" finished-at="2022-02-18T11:33:05 IST" duration-ms="19762" status="PASS">
+        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:EditAccountTest_Scenario.GTPL_Test@434a63ab]" started-at="2022-02-21T02:51:43 GMT" name="start" finished-at="2022-02-21T02:52:07 GMT" duration-ms="24002" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="user(java.lang.String)[pri:0, instance:EditAccountTest_Scenario.GTPL_Test@37d4349f]" started-at="2022-02-18T11:33:05 IST" name="user" finished-at="2022-02-18T11:33:06 IST" duration-ms="313" status="PASS">
+        <test-method signature="user(java.lang.String)[pri:0, instance:EditAccountTest_Scenario.GTPL_Test@434a63ab]" started-at="2022-02-21T02:52:07 GMT" name="user" finished-at="2022-02-21T02:52:07 GMT" duration-ms="169" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user -->
-        <test-method signature="passWord(java.lang.String)[pri:1, instance:EditAccountTest_Scenario.GTPL_Test@37d4349f]" started-at="2022-02-18T11:33:06 IST" name="passWord" finished-at="2022-02-18T11:33:08 IST" duration-ms="2406" status="PASS">
+        <test-method signature="passWord(java.lang.String)[pri:1, instance:EditAccountTest_Scenario.GTPL_Test@434a63ab]" started-at="2022-02-21T02:52:07 GMT" name="passWord" finished-at="2022-02-21T02:52:09 GMT" duration-ms="1688" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,23 +40,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passWord -->
-        <test-method signature="checkTheUrl()[pri:2, instance:EditAccountTest_Scenario.GTPL_Test@37d4349f]" started-at="2022-02-18T11:33:08 IST" name="checkTheUrl" finished-at="2022-02-18T11:33:08 IST" duration-ms="40" status="PASS">
+        <test-method signature="checkTheUrl()[pri:2, instance:EditAccountTest_Scenario.GTPL_Test@434a63ab]" started-at="2022-02-21T02:52:09 GMT" name="checkTheUrl" finished-at="2022-02-21T02:52:09 GMT" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTheUrl -->
-        <test-method signature="clickEditAccount()[pri:3, instance:EditAccountTest_Scenario.GTPL_Test@37d4349f]" started-at="2022-02-18T11:33:08 IST" name="clickEditAccount" finished-at="2022-02-18T11:33:26 IST" duration-ms="17572" status="PASS">
+        <test-method signature="clickEditAccount()[pri:3, instance:EditAccountTest_Scenario.GTPL_Test@434a63ab]" started-at="2022-02-21T02:52:09 GMT" name="clickEditAccount" finished-at="2022-02-21T02:52:11 GMT" duration-ms="2202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickEditAccount -->
-        <test-method signature="editPageDetails()[pri:4, instance:EditAccountTest_Scenario.GTPL_Test@37d4349f]" started-at="2022-02-18T11:33:26 IST" name="editPageDetails" finished-at="2022-02-18T11:33:27 IST" duration-ms="1763" status="PASS">
+        <test-method signature="editPageDetails()[pri:4, instance:EditAccountTest_Scenario.GTPL_Test@434a63ab]" started-at="2022-02-21T02:52:11 GMT" name="editPageDetails" finished-at="2022-02-21T02:52:12 GMT" duration-ms="478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editPageDetails -->
-        <test-method signature="editAccountPage()[pri:5, instance:EditAccountTest_Scenario.GTPL_Test@37d4349f]" started-at="2022-02-18T11:33:27 IST" name="editAccountPage" finished-at="2022-02-18T11:33:37 IST" duration-ms="10034" status="PASS">
+        <test-method signature="editAccountPage()[pri:5, instance:EditAccountTest_Scenario.GTPL_Test@434a63ab]" started-at="2022-02-21T02:52:12 GMT" name="editAccountPage" finished-at="2022-02-21T02:52:24 GMT" duration-ms="12120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editAccountPage -->
-        <test-method is-config="true" signature="stop()[pri:0, instance:EditAccountTest_Scenario.GTPL_Test@37d4349f]" started-at="2022-02-18T11:33:37 IST" name="stop" finished-at="2022-02-18T11:33:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="stop()[pri:0, instance:EditAccountTest_Scenario.GTPL_Test@434a63ab]" started-at="2022-02-21T02:52:24 GMT" name="stop" finished-at="2022-02-21T02:52:24 GMT" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
