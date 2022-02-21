@@ -116,6 +116,15 @@ public class GTPLNewCustomerEntryPage {
 		}
 	}
 
+	public void formatGender() {
+		wait = new WebDriverWait(driver, 20);
+		WebElement gender = wait.until(ExpectedConditions.visibilityOfElementLocated(Gender));
+		if (gender.isSelected()) {
+			System.out.println("Male is selected");
+		}
+
+	}
+
 	public void formatDateOfBirth() {
 		wait = new WebDriverWait(driver, 20);
 		@SuppressWarnings("resource")
