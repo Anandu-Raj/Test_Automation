@@ -43,7 +43,7 @@ public class Gtpltest {
 		public void searchtest() 
 		{
 			Home ob=new Home(driver);
-			ob.newcusdisplay();
+			ob.newaccdisplay();
 			
 		}
 		@Test(priority = 3 )
@@ -53,8 +53,8 @@ public class Gtpltest {
 			ob.Customerid_display();
 			ob.Accounttype_display();
 			ob.Initialdeposit_display();
-			ob.Submit_display();
-			//ob.Reset_display();
+			//ob.Submit_display();
+			ob.Reset_display();
 			
 		}
 		

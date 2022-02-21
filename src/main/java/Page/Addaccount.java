@@ -63,7 +63,7 @@ public class Addaccount {
 	public void Initialdeposit_display() {
 		wait = new WebDriverWait(driver, 20);
 		WebElement inideposit = wait.until(ExpectedConditions.visibilityOfElementLocated(initialdeposit));
-		inideposit.sendKeys("400a");
+		inideposit.sendKeys("400");
 		Assert.assertEquals(true, inideposit.isDisplayed());
 		System.out.println("Initial deposit field displayed");
 
@@ -89,16 +89,48 @@ public class Addaccount {
 		WebElement submitbtn = wait.until(ExpectedConditions.visibilityOfElementLocated(submit));
 		Assert.assertEquals(true, submitbtn.isDisplayed());
 		System.out.println("Submitt button displayed");
-		submitbtn.click();
+		
+		WebElement custid = wait.until(ExpectedConditions.visibilityOfElementLocated(customerid));
+		WebElement inideposit = wait.until(ExpectedConditions.visibilityOfElementLocated(initialdeposit));
+		String custidText = custid.getAttribute("value");
+		String inidepositText = inideposit.getAttribute("value");
+		if(custidText.isEmpty()&& inidepositText.isEmpty())
+		{
+		   System.out.println("Customer id field is empty");
+		   System.out.println("Initial deposit field is empty");
+		}
+		else if(custidText.isEmpty())
+		{
+			System.out.println("Customer id field is empty");
+		}
+		else if(inidepositText.isEmpty())
+		{
+			System.out.println("Initial deposit field is empty");
+		}
+		else
+		{
+			submitbtn.click();
+		}
+		
 
 	}
 
 	public void Reset_display() {
 		wait = new WebDriverWait(driver, 20);
 		WebElement clear = wait.until(ExpectedConditions.visibilityOfElementLocated(reset));
-		clear.click();
+		
 		Assert.assertEquals(true, clear.isDisplayed());
 		System.out.println("Clear button displayed");
+		clear.click();
+		WebElement custid = wait.until(ExpectedConditions.visibilityOfElementLocated(customerid));
+		WebElement inideposit = wait.until(ExpectedConditions.visibilityOfElementLocated(initialdeposit));
+		String custidText = custid.getAttribute("value");
+		String inidepositText = inideposit.getAttribute("value");
+		if(custidText.isEmpty()&& inidepositText.isEmpty())
+		{
+		   System.out.println("fields are empty");
+		   
+		}
 	}
 
 }
